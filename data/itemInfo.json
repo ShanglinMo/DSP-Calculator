@@ -1,0 +1,90 @@
+{
+    "components": {
+        "natural_resource": {
+            "iron_ore": {
+                "production_speed": 30,
+                "made_in": "mining_machine"
+            },
+            "copper_ore": {
+                "production_speed": 30,
+                "made_in": "mining_machine"
+            },
+            "stone_ore": {
+                "production_speed": 30,
+                "made_in": "mining_machine"
+            },
+            "coal_ore": {
+                "production_speed": 30,
+                "made_in": "mining_machine"
+            },
+            "silicon_ore": {
+                "production_speed": 30,
+                "made_in": "mining_machine"
+            },
+            "titanium_ore": {
+                "production_speed": 30,
+                "made_in": "mining_machine"
+            },
+            "water": {
+                "production_speed": 60,
+                "made_in": "water_pump"
+            },
+            "cruld_oil": {
+                "production_speed": 72,
+                "made_in": "oil_extractor"
+            },
+            "kimberlite_ore": {
+                "production_speed": 30,
+                "made_in": "mining_machine"
+            },
+            "fractal_silicon": {
+                "production_speed": 30,
+                "made_in": "mining_machine"
+            },
+            "optical_grating_crystal": { 
+                "production_speed": 30,
+                "made_in": "mining_machine"
+            },
+            "organic_crystal": { 
+                "production_speed": 30,
+                "made_in": "mining_machine"
+            },
+            "spiniform_stalagmite_crystal": { 
+                "production_speed": 30,
+                "made_in": "mining_machine"
+            },
+            "unipolar_magnet": { 
+                "production_speed": 30,
+                "made_in": "mining_machine"
+            },
+            "fire_ice": {
+                "production_speed": 30,
+                "made_in": ""
+            }
+            
+        },
+        "material": {
+            "iron_ingot": {
+                "production_speed": 60,
+                "made_in": "smelting_facility",
+                "assembler": false
+            },
+            "copper_ingot": {
+                "production_speed": 60,
+                "made_in": "smelting_facility",
+                "assembler": false
+            },
+            "stone": {
+                "production_speed": 60,
+                "made_in": "smelting_facility",
+                "assembler": false
+            },
+            "energetic_graphite": {
+                "production_speed": 60,
+                "made_in": "smelting_facility",
+                "assembler": false
+            }
+
+        }
+    }
+}

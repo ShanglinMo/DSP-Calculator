@@ -1,5 +1,5 @@
 {
-    "components": {
+    "recipes": {
         "natural_resource": {
             "iron_ore": {
                 "production_speed": 30,
@@ -65,26 +65,247 @@
         },
         "material": {
             "iron_ingot": {
-                "production_speed": 60,
-                "made_in": "smelting_facility",
-                "assembler": false
+                "recipe": {
+                    "production_speed": 60,
+                    "made_in": "smelter",
+                    "byproduct": null,
+                    "ingredients": [{
+                        "name": "iron_ore",
+                        "amount": 60
+                    }]
+                },
+                "recipe2": null
             },
             "copper_ingot": {
-                "production_speed": 60,
-                "made_in": "smelting_facility",
-                "assembler": false
+                "recipe": {
+                    "production_speed": 60,
+                    "made_in": "smelter",
+                    "byproduct": null,
+                    "ingredients": [{
+                        "name": "copper_ore",
+                        "amount": 60
+                    }]
+                },
+                "recipe2": null
             },
             "stone": {
-                "production_speed": 60,
-                "made_in": "smelting_facility",
-                "assembler": false
+                "recipe": {
+                    "production_speed": 60,
+                    "made_in": "smelter",
+                    "byproduct": null,
+                    "ingredients": [{
+                        "name": "stone_ore",
+                        "aomunt": 60
+                    }]
+                },
+                "recipe2": null
             },
             "energetic_graphite": {
-                "production_speed": 60,
-                "made_in": "smelting_facility",
-                "assembler": false
-            }
-
+                "recipe": {
+                    "production_speed": 30,
+                    "made_in": "smelter",
+                    "byproduct": null,
+                    "ingredients":[{
+                        "name": "coal_ore",
+                        "amount": 60
+                    }]
+                },
+                "recipe2": {
+                    "production_speed": 15,
+                    "made_in": "oil_refinery",
+                    "byproduct": {
+                        "name": "hydrogen",
+                        "amount": 180   
+                    },
+                    "ingredients":[{
+                        "name": "refined_oil",
+                        "amount": 60
+                    },{
+                        "name": "hydrogen",
+                        "amount": 120
+                    }]
+                }
+            },
+            "high_purity_silicon": {
+                "recipe": {
+                    "production_speed": 30,
+                    "made_in": "smelter",
+                    "byproduct": null,
+                    "ingredients": [{
+                        "name": "silicon_ore",
+                        "amount": 60
+                    }]
+                },
+                "recipe2": null
+            },
+            "titanium_ingot": {
+                "recipe": {
+                    "production_speed": 30,
+                    "made_in": "smelter",
+                    "byproduct": null,
+                    "ingredients": [{
+                        "name": "titanium_ore",
+                        "amount": 60
+                    }]
+                },
+                "recipe2": null
+            },
+            "sulfuric_acid": {
+                "recipe": {
+                    "production_speed": 60,
+                    "made_in": "water_pump",
+                    "byproduct": null,
+                    "ingredients": [{
+                        "name": "sulfuric_acid_ocean",
+                        "amount": 1
+                    }]
+                },
+                "recipe2": {
+                    "production_speed": 40,
+                    "made_in": "chemical_plant",
+                    "byproduct": null,
+                    "ingredients": [{
+                        "name": "refined_oil",
+                        "amount": 60
+                    },{
+                        "name": "stone_ore",
+                        "amount": 80
+                    },{
+                        "name": "water",
+                        "amount": 40
+                    }]
+                }
+            },
+            "refined_oil": {
+                "recipe": {
+                    "production_speed": 30,
+                    "made_in": "oil_refinery",
+                    "byproduct": {
+                        "name": "hydrogen",
+                        "amount": 15
+                    },
+                    "ingredients": [{
+                        "name": "crude_oil",
+                        "amount": 30
+                    }]
+                },
+                "recipe2": null
+            },
+            "magnet": {
+                "recipe": {
+                    "production_speed": 40,
+                    "made_in": "smelter",
+                    "byproduct": null,
+                    "ingredients": [{
+                        "name": "iron_ore",
+                        "amount": 40
+                    }]
+                },
+                "recipe2": null
+            },
+            "magnetic_coil": {
+                "recipe": {
+                    "production_speed": 120,
+                    "made_in": "assembler",
+                    "byproduct": null,
+                    "ingredients": [{
+                        "name": "magnet",
+                        "amount": 120
+                    },{
+                        "name": "copper_ingot",
+                        "amount": 60
+                    }]
+                },
+                "recipe2": null
+            },
+            "glass": {
+                "recipe": {
+                    "production_speed": 30,
+                    "made_in": "smelter",
+                    "byproduct": null,
+                    "ingredients": [{
+                        "name": "stone_ore",
+                        "amount": 60
+                    }]
+                },
+                "recipe2": null
+            },
+            "diamond": {
+                "recipe": {
+                    "production_speed": 30,
+                    "made_in": "smelter",
+                    "byproduct": null,
+                    "ingredients": [{
+                        "name": "energetic_graphite",
+                        "amount": 30
+                    }]
+                },
+                "recipe2": {
+                    "production_speed": 30,
+                    "made_in": "smelter",
+                    "byproduct": null,
+                    "ingredients": [{
+                        "name": "kimberlite_ore",
+                        "amount": 30
+                    }]
+                }
+            },
+            "crystal_silicon": {
+                "recipe": {
+                    "production_speed": 60,
+                    "made_in": "smelter",
+                    "byproduct": null,
+                    "ingredients": [{
+                        "name": "silicon_ingot",
+                        "amount": 60
+                    }]
+                },
+                "recipe2": {
+                    "production_speed": 60,
+                    "made_in": "smelter",
+                    "byproduct": null,
+                    "ingredients": [{
+                        "name": "fractal_silicon",
+                        "amount": 60
+                    }]
+                }
+            },
+            "titanium_alloy": {
+                "recipe": {
+                    "production_speed": 20,
+                    "made_in": "smelter",
+                    "byproduct": null,
+                    "ingredients": [{
+                        "name": "titannium_ingot",
+                        "amount": 20
+                    },{
+                        "name": "steel",
+                        "amount": 20
+                    },{
+                        "name": "sulfuric_acid",
+                        "amount": 40
+                    }]
+                },
+                "recipe2": null
+            },
+            "plastic ": {
+                "recipe": {
+                    "production_speed": 20,
+                    "made_in": "smelter",
+                    "byproduct": null,
+                    "ingredients": [{
+                        "name": "titannium_ingot",
+                        "amount": 20
+                    },{
+                        "name": "steel",
+                        "amount": 20
+                    },{
+                        "name": "sulfuric_acid",
+                        "amount": 40
+                    }]
+                },
+                "recipe2": null
+            },
         }
     }
 }

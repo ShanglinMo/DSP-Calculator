@@ -41,11 +41,11 @@
                 "production_speed": 30,
                 "made_in": "mining_machine"
             },
-            "optical_grating_crystal": { //光栅石
+            "optical_grating_crystal": { 
                 "production_speed": 30,
                 "made_in": "mining_machine"
             },
-            "organic_crystal": { //有机晶体
+            "organic_crystal": { 
                 "production_speed": 30,
                 "made_in": "mining_machine"
             },
@@ -53,14 +53,14 @@
                 "production_speed": 30,
                 "made_in": "mining_machine"
             },
-            "unipolar_magnet": { //单极磁石
+            "unipolar_magnet": { 
                 "production_speed": 30,
                 "made_in": "mining_machine"
             },
-            "fire_ice": { //单极磁石
+            "fire_ice": {
                 "production_speed": 30,
                 "made_in": ""
-            },
+            }
             
         },
         "material": {
@@ -83,7 +83,7 @@
                 "production_speed": 60,
                 "made_in": "smelting_facility",
                 "assembler": false
-            },
+            }
 
         }
     }

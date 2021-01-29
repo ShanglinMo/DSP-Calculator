@@ -64,6 +64,7 @@
             
         },
         "iron_ingot": {
+            "nOfRcp": 1,
             "recipe": {
                 "production_speed": 60,
                 "made_in": "smelter",
@@ -72,10 +73,10 @@
                     "name": "iron_ore",
                     "amount": 60
                 }]
-            },
-            "recipe2": null
+            }
         },
         "copper_ingot": {
+            "nOfRcp": 1,
             "recipe": {
                 "production_speed": 60,
                 "made_in": "smelter",
@@ -84,10 +85,10 @@
                     "name": "copper_ore",
                     "amount": 60
                 }]
-            },
-            "recipe2": null
+            }
         },
         "stone": {
+            "nOfRcp": 1,
             "recipe": {
                 "production_speed": 60,
                 "made_in": "smelter",
@@ -96,10 +97,10 @@
                     "name": "stone_ore",
                     "aomunt": 60
                 }]
-            },
-            "recipe2": null
+            }
         },
         "energetic_graphite": {
+            "nOfRcp": 2,
             "recipe": {
                 "production_speed": 30,
                 "made_in": "smelter",
@@ -126,6 +127,7 @@
             }
         },
         "high_purity_silicon": {
+            "nOfRcp": 1,
             "recipe": {
                 "production_speed": 30,
                 "made_in": "smelter",
@@ -134,10 +136,10 @@
                     "name": "silicon_ore",
                     "amount": 60
                 }]
-            },
-            "recipe2": null
+            }
         },
         "titanium_ingot": {
+            "nOfRcp": 1,
             "recipe": {
                 "production_speed": 30,
                 "made_in": "smelter",
@@ -146,10 +148,10 @@
                     "name": "titanium_ore",
                     "amount": 60
                 }]
-            },
-            "recipe2": null
+            }
         },
         "sulfuric_acid": {
+            "nOfRcp": 2,
             "recipe": {
                 "production_speed": 60,
                 "made_in": "water_pump",
@@ -176,6 +178,7 @@
             }
         },
         "refined_oil": {
+            "nOfRcp": 1,
             "recipe": {
                 "production_speed": 30,
                 "made_in": "oil_refinery",
@@ -187,10 +190,10 @@
                     "name": "crude_oil",
                     "amount": 30
                 }]
-            },
-            "recipe2": null
+            }   
         },
         "magnet": {
+            "nOfRcp": 1,
             "recipe": {
                 "production_speed": 40,
                 "made_in": "smelter",
@@ -199,10 +202,10 @@
                     "name": "iron_ore",
                     "amount": 40
                 }]
-            },
-            "recipe2": null
+            }  
         },
         "magnetic_coil": {
+            "nOfRcp": 1,
             "recipe": {
                 "production_speed": 120,
                 "made_in": "assembler",
@@ -214,10 +217,10 @@
                     "name": "copper_ingot",
                     "amount": 60
                 }]
-            },
-            "recipe2": null
+            }  
         },
         "glass": {
+            "nOfRcp": 1,
             "recipe": {
                 "production_speed": 30,
                 "made_in": "smelter",
@@ -226,10 +229,10 @@
                     "name": "stone_ore",
                     "amount": 60
                 }]
-            },
-            "recipe2": null
+            }  
         },
         "diamond": {
+            "nOfRcp": 2,
             "recipe": {
                 "production_speed": 30,
                 "made_in": "smelter",
@@ -250,6 +253,7 @@
             }
         },
         "crystal_silicon": {
+            "nOfRcp": 2,
             "recipe": {
                 "production_speed": 60,
                 "made_in": "smelter",
@@ -270,6 +274,7 @@
             }
         },
         "titanium_alloy": {
+            "nOfRcp": 1,
             "recipe": {
                 "production_speed": 20,
                 "made_in": "smelter",
@@ -284,10 +289,10 @@
                     "name": "sulfuric_acid",
                     "amount": 40
                 }]
-            },
-            "recipe2": null
+            }
         },
         "plastic": {
+            "nOfRcp": 1,
             "recipe": {
                 "production_speed": 20,
                 "made_in": "chemical_plant",
@@ -299,10 +304,10 @@
                     "name": "energetic_graphite",
                     "amount": 20
                 }]
-            },
-            "recipe2": null
+            }
         },
         "steel": {
+            "nOfRcp": 1,
             "recipe": {
                 "production_speed": 20,
                 "made_in": "smelter",
@@ -311,10 +316,10 @@
                     "name": "iron_ingot",
                     "amount": 60
                 }]
-            },
-            "recipe2": null
+            }
         },
         "circuit_board": {
+            "nOfRcp": 1,
             "recipe": {
                 "production_speed": 120,
                 "made_in": "assembler",
@@ -326,10 +331,10 @@
                     "name": "copper_ingot",
                     "amount": 60
                 }]
-            },
-            "recipe2": null
+            }
         },
         "prism": {
+            "nOfRcp": 1,
             "recipe": {
                 "production_speed": 60,
                 "made_in": "assembler",
@@ -338,10 +343,10 @@
                     "name": "glass",
                     "amount": 90
                 }]
-            },
-            "recipe2": null
+            } 
         },
         "electric_motor": {
+            "nOfRcp": 1,
             "recipe": {
                 "production_speed": 30,
                 "made_in": "assembler",
@@ -356,10 +361,10 @@
                     "name": "magnetic_coil",
                     "amount": 30
                 }]
-            },
-            "recipe2": null
+            } 
         },
         "microcrystalline_component": {
+            "nOfRcp": 1,
             "recipe": {
                 "production_speed": 30,
                 "made_in": "assembler",
@@ -371,10 +376,10 @@
                     "name": "copper_ingot",
                     "amount": 30
                 }]
-            },
-            "recipe2": null
+            }
         },
         "gear": {
+            "nOfRcp": 1,
             "recipe": {
                 "production_speed": 60,
                 "made_in": "assembler",
@@ -383,10 +388,10 @@
                     "name": "iron_ingot",
                     "amount": 60
                 }]
-            },
-            "recipe2": null
+            }
         },
         "plasma_exciter": {
+            "nOfRcp": 1,
             "recipe": {
                 "production_speed": 30,
                 "made_in": "assembler",
@@ -398,10 +403,10 @@
                     "name": "prism",
                     "amount": 60
                 }]
-            },
-            "recipe2": null
+            }
         },
         "photon_combiner": {
+            "nOfRcp": 2,
             "recipe": {
                 "production_speed": 20,
                 "made_in": "assembler",
@@ -428,6 +433,7 @@
             }
         },
         "electromagnetic_turbine": {
+            "nOfRcp": 1,
             "recipe": {
                 "production_speed": 30,
                 "made_in": "assembler",
@@ -439,10 +445,10 @@
                     "name": "electric_motor",
                     "amount": 60
                 }]
-            },
-            "recipe2": null
+            }
         },
         "processor": {
+            "nOfRcp": 1,
             "recipe": {
                 "production_speed": 20,
                 "made_in": "assembler",
@@ -454,10 +460,10 @@
                     "name": "microcrystalline_component",
                     "amount": 40
                 }]
-            },
-            "recipe2": null
+            }
         },
         "foundation": {
+            "nOfRcp": 1,
             "recipe": {
                 "production_speed": 60,
                 "made_in": "assembler",
@@ -469,10 +475,10 @@
                     "name": "steel",
                     "amount": 60
                 }]
-            },
-            "recipe2": null
+            }
         },
         "particle_countainer": {
+            "nOfRcp": 2,
             "recipe": {
                 "production_speed": 15,
                 "made_in": "assembler",
@@ -502,6 +508,7 @@
             }
         },
         "super_magnetic_ring": {
+            "nOfRcp": 1,
             "recipe": {
                 "production_speed": 20,
                 "made_in": "assembler",
@@ -516,10 +523,10 @@
                     "name": "energetic_graphite",
                     "amount": 20
                 }]
-            },
-            "recipe2": null
+            }
         },
         "graviton_lens": {
+            "nOfRcp": 1,
             "recipe": {
                 "production_speed": 10,
                 "made_in": "assembler",
@@ -531,10 +538,10 @@
                     "name": "strange_matter",
                     "amount": 10
                 }]
-            },
-            "recipe2": null
+            }  
         },
         "blue_matrix": {
+            "nOfRcp": 1,
             "recipe": {
                 "production_speed": 20,
                 "made_in": "matrix_lab",
@@ -546,10 +553,10 @@
                     "name": "circuit_board",
                     "amount": 20
                 }]
-            },
-            "recipe2": null
+            }
         },
         "red_matrix": {
+            "nOfRcp": 1,
             "recipe": {
                 "production_speed": 10,
                 "made_in": "matrix_lab",
@@ -561,10 +568,10 @@
                     "name": "hydrogen",
                     "amount": 20
                 }]
-            },
-            "recipe2": null
+            }
         },
         "yellow_matrix": {
+            "nOfRcp": 1,
             "recipe": {
                 "production_speed": 7.5,
                 "made_in": "matrix_lab",
@@ -576,10 +583,10 @@
                     "name": "titanium_crystal",
                     "amount": 7.5
                 }]
-            },
-            "recipe2": null
+            }
         },
         "purple_matrix": {
+            "nOfRcp": 1,
             "recipe": {
                 "production_speed": 6,
                 "made_in": "matrix_lab",
@@ -591,10 +598,10 @@
                     "name": "particle_broadband",
                     "amount": 6
                 }]
-            },
-            "recipe2": null
+            }
         },
         "green_matrix": {
+            "nOfRcp": 1,
             "recipe": {
                 "production_speed": 2.5,
                 "made_in": "matrix_lab",
@@ -606,10 +613,10 @@
                     "name": "quantum_chip",
                     "amount": 2.5
                 }]
-            },
-            "recipe2": null
+            }
         },
         "white_matrix": {
+            "nOfRcp": 1,
             "recipe": {
                 "production_speed": 4,
                 "made_in": "matrix_lab",
@@ -633,10 +640,10 @@
                     "name": "antimatter",
                     "amount": 4
                 }]
-            },
-            "recipe2": null
+            }
         },
         "hydrogen": {
+            "nOfRcp": 4,
             "recipe": {
                 "production_speed": 15,
                 "made_in": "oil_refinery",
@@ -690,6 +697,7 @@
             }
         },
         "deuterium": {
+            "nOfRcp": 2,
             "recipe": {
                 "production_speed": 60,
                 "made_in": "miniature_particle_collider",
@@ -791,7 +799,7 @@
                 "made_in": "miniature_particle_collider",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "praticle_container",
+                    "name": "particle_container",
                     "amount": 15
                 },{
                     "name": "iron_ingot",
@@ -838,6 +846,105 @@
                 "ingredients": [{
                     "name": "spiniform_stalagmite_crystal",
                     "amount": 30
+                }]
+            }
+        },
+        "annihilation_constraint_sphere": {
+            "nOfRcp": 1,
+            "recipe": {
+                "production_speed": 3,
+                "made_in": "assembler",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "particle_container",
+                    "amount": 3
+                },{
+                    "name": "processor",
+                    "amount": 3
+                }]
+            }
+        },
+        "titanium_glass": {
+            "nOfRcp": 1,
+            "recipe": {
+                "production_speed": 24,
+                "made_in": "assembler",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "glass",
+                    "amount": 24
+                },{
+                    "name": "titanium_ingot",
+                    "amount": 24
+                },{
+                    "name": "water",
+                    "amount": 24
+                }]
+            }
+        },
+        "particle_broadband": {
+            "nOfRcp": 1,
+            "recipe": {
+                "production_speed": 7.5,
+                "made_in": "assembler",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "carbon_nanotube",
+                    "amount": 15
+                },{
+                    "name": "crystal_silicon",
+                    "amount": 15
+                },{
+                    "name": "plastic",
+                    "amount": 7.5
+                }]
+            }
+        },
+        "plane_filter": {
+            "nOfRcp": 1,
+            "recipe": {
+                "production_speed": 5,
+                "made_in": "assembler",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "casimir_crystal",
+                    "amount": 5
+                },{
+                    "name": "titanium_glass",
+                    "amount": 10
+                }]
+            }
+        },
+        "quantum_chip": {
+            "nOfRcp": 1,
+            "recipe": {
+                "production_speed": 10,
+                "made_in": "assembler",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "processor",
+                    "amount": 20
+                },{
+                    "name": "titanium_glass",
+                    "amount": 20
+                }]
+            }
+        },
+        "frame_material": {
+            "nOfRcp": 1,
+            "recipe": {
+                "production_speed": 10,
+                "made_in": "assembler",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "carbon_nanotube",
+                    "amount": 40
+                },{
+                    "name": "titanium_alloy",
+                    "amount": 10
+                },{
+                    "name": "high_purity_silicon",
+                    "amount": 10
                 }]
             }
         }

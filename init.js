@@ -22,3 +22,9 @@ function loadData(){
 function getItem(itemName){
     console.log(recipeList.itemName)
 }
+
+function getAllItem(){
+    for(var i=0;i<json.length;i++){
+        console.log(recipeList[i]);
+    }
+}

@@ -1,67 +1,72 @@
 {
     "recipes": {
-        "natural_resource": {
-            "iron_ore": {
-                "production_speed": 30,
-                "made_in": "mining_machine"
-            },
-            "copper_ore": {
-                "production_speed": 30,
-                "made_in": "mining_machine"
-            },
-            "stone_ore": {
-                "production_speed": 30,
-                "made_in": "mining_machine"
-            },
-            "coal_ore": {
-                "production_speed": 30,
-                "made_in": "mining_machine"
-            },
-            "silicon_ore": {
-                "production_speed": 30,
-                "made_in": "mining_machine"
-            },
-            "titanium_ore": {
-                "production_speed": 30,
-                "made_in": "mining_machine"
-            },
-            "water": {
-                "production_speed": 60,
-                "made_in": "water_pump"
-            },
-            "cruld_oil": {
-                "production_speed": 72,
-                "made_in": "oil_extractor"
-            },
-            "kimberlite_ore": {
-                "production_speed": 30,
-                "made_in": "mining_machine"
-            },
-            "fractal_silicon": {
-                "production_speed": 30,
-                "made_in": "mining_machine"
-            },
-            "optical_grating_crystal": { 
-                "production_speed": 30,
-                "made_in": "mining_machine"
-            },
-            "organic_crystal": { 
-                "production_speed": 30,
-                "made_in": "mining_machine"
-            },
-            "spiniform_stalagmite_crystal": { 
-                "production_speed": 30,
-                "made_in": "mining_machine"
-            },
-            "unipolar_magnet": { 
-                "production_speed": 30,
-                "made_in": "mining_machine"
-            },
-            "fire_ice": {
-                "production_speed": 30,
-                "made_in": ""
-            }
-            
+        "sulfuric_acid_ocean": {
+            "end": true
+        },   
+        "iron_ore": {
+            "end": true,
+            "production_speed": 30,
+            "made_in": "mining_machine"
+        },
+        "copper_ore": {
+            "end": true,
+            "production_speed": 30,
+            "made_in": "mining_machine"
+        },
+        "stone_ore": {
+            "end": true,
+            "production_speed": 30,
+            "made_in": "mining_machine"
+        },
+        "coal_ore": {
+            "production_speed": 30,
+            "made_in": "mining_machine"
+        },
+        "silicon_ore": {
+            "production_speed": 30,
+            "made_in": "mining_machine"
+        },
+        "titanium_ore": {
+            "production_speed": 30,
+            "made_in": "mining_machine"
+        },
+        "water": {
+            "end": true,
+            "production_speed": 60,
+            "made_in": "water_pump"
+        },
+        "crude_oil": {
+            "end": true,
+            "production_speed": 72,
+            "made_in": "oil_extractor"
+        },
+        "kimberlite_ore": {
+            "production_speed": 30,
+            "made_in": "mining_machine"
+        },
+        "fractal_silicon": {
+            "production_speed": 30,
+            "made_in": "mining_machine"
+        },
+        "optical_grating_crystal": { 
+            "production_speed": 30,
+            "made_in": "mining_machine"
+        },
+        "organic_crystal": { 
+            "production_speed": 30,
+            "made_in": "mining_machine"
+        },
+        "spiniform_stalagmite_crystal": { 
+            "production_speed": 30,
+            "made_in": "mining_machine"
+        },
+        "unipolar_magnet": { 
+            "production_speed": 30,
+            "made_in": "mining_machine"
+        },
+        "fire_ice": {
+            "production_speed": 30,
+            "made_in": "mining_machine"
         },
         "iron_ingot": {
             "nOfRcp": 1,
@@ -76,6 +81,7 @@
             }
         },
         "copper_ingot": {
+            "end": false,
             "nOfRcp": 1,
             "recipe": {
                 "production_speed": 60,
@@ -88,8 +94,9 @@
             }
         },
         "stone": {
+            "end": false,
             "nOfRcp": 1,
-            "recipe": {
+            "recipes": [{
                 "production_speed": 60,
                 "made_in": "smelter",
                 "byproduct": null,
@@ -97,7 +104,7 @@
                     "name": "stone_ore",
                     "aomunt": 60
                 }]
-            }
+            }]
         },
         "energetic_graphite": {
             "nOfRcp": 2,
@@ -152,34 +159,35 @@
         },
         "sulfuric_acid": {
             "nOfRcp": 2,
-            "recipe": {
-                "production_speed": 60,
-                "made_in": "water_pump",
-                "byproduct": null,
-                "ingredients": [{
-                    "name": "sulfuric_acid_ocean",
-                    "amount": 1
-                }]
-            },
-            "recipe2": {
-                "production_speed": 40,
-                "made_in": "chemical_plant",
-                "byproduct": null,
-                "ingredients": [{
-                    "name": "refined_oil",
-                    "amount": 60
-                },{
-                    "name": "stone_ore",
-                    "amount": 80
-                },{
-                    "name": "water",
-                    "amount": 40
-                }]
-            }
-        },
+            "recipes": [
+                {
+                    "production_speed": 40,
+                    "made_in": "chemical_plant",
+                    "byproduct": null,
+                    "ingredients": [{
+                        "name": "refined_oil",
+                        "amount": 60
+                    },{
+                        "name": "stone_ore",
+                        "amount": 80
+                    },{
+                        "name": "water",
+                        "amount": 40
+                    }]
+                },
+                {
+                    "production_speed": 60,
+                    "made_in": "water_pump",
+                    "byproduct": null,
+                    "ingredients": [{
+                        "name": "sulfuric_acid_ocean",
+                        "amount": 1
+                }]}
+            ]},
         "refined_oil": {
+            "end": false,
             "nOfRcp": 1,
-            "recipe": {
+            "recipes": [{
                 "production_speed": 30,
                 "made_in": "oil_refinery",
                 "byproduct": {
@@ -190,9 +198,10 @@
                     "name": "crude_oil",
                     "amount": 30
                 }]
-            }   
+            }]   
         },
         "magnet": {
+            "end": false,
             "nOfRcp": 1,
             "recipe": {
                 "production_speed": 40,
@@ -205,8 +214,9 @@
             }  
         },
         "magnetic_coil": {
+            "end": false,
             "nOfRcp": 1,
-            "recipe": {
+            "recipes": [{
                 "production_speed": 120,
                 "made_in": "assembler",
                 "byproduct": null,
@@ -217,7 +227,7 @@
                     "name": "copper_ingot",
                     "amount": 60
                 }]
-            }  
+            }]  
         },
         "glass": {
             "nOfRcp": 1,

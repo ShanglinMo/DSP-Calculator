@@ -131,7 +131,7 @@
                     "amount": 60
                 }]
             },{
-                "end": false,
+                "end": true,
                 "production_speed": 45,
                 "made_in": "oil_refinery",
                 "byproduct": [{
@@ -154,7 +154,7 @@
                     "amount": 60
                 }],
                 "ingredients": [{
-                    "name": "crytical_photon",
+                    "name": "critical_photon",
                     "amount": 60
                 }]
             },{

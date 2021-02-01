@@ -47,12 +47,15 @@
 <script>
 
 var recipeList
-var json = (function () {
+var supChain
+
+function loadData(){
+    var json = (function () {
         var json = null;
         $.ajax({
             'async': false,
             'global': false,
-            'url': "data/itemInfo.json",
+            'url': "data/itemInfo_EN.json",
             'dataType': "json",
             'success': function (data) {
                 json = data;
@@ -60,52 +63,30 @@ var json = (function () {
         });
         return json;
     })(); 
-    recipeList = json.recipes
-console.log(recipeList.磁线圈)
-
-function calc(item, amount){
-    var factor = amount / 60
-    var igdList = []
-    var igd = item.recipe
-
-    for(var i=0;i<igd.ingredients.length;i++){
-        igdList.push(igd.ingredients[i].name)
-        igdList.push(factor * igd.ingredients[i].amount)
-    }
-    console.log(igdList)
+    return json.recipes
 }
-
-function makeNode1(item, amount){
-    // End of recursion
+function makeChain(item, amount){
     var parent = new Node(item, amount, recipeList)
-    if(recipeList[item].end){return parent}
-
-    if(!recipeList[item].end){
-        var igd = recipeList[item].recipes[0].ingredients
-        for(var i=0;i<igd.length;i++){
-            var child = makeNode(igd[i].name, igd[i].amount)
-            parent.next(child)
-        }
-        return parent
-    }
-}
-
-function makeNode(item, amount){
-    var parent = new Node(item, amount, recipeList)
-    if(recipeList[item].end){return parent}
-    if(!recipeList[item].end){
-        for(var n=0;n<recipeList[item].nOfRcp;n++){
+    for(var n=0;n<recipeList[item].recipes.length;n++){
+            var factor = amount / recipeList[item].recipes[n].production_speed
             var igd = recipeList[item].recipes[n].ingredients
-            for(var i=0;i<igd.length;i++){
-                var child = makeNode(igd[i].name, igd[i].amount)
+            if(recipeList[item].recipes[n].end){
+                for(var i=0;i<igd.length;i++){
+                    parent.ingredients[n][i] = new Node(igd[i].name, igd[i].amount*factor, recipeList)
+                }
+            } else {
+                for(var i=0;i<igd.length;i++){
+                var child = makeChain(igd[i].name, igd[i].amount*factor)
                 parent.ingredients[n][i] = child
+                }
             }
-        }   
-        return parent
-    }
+        } 
+    return parent 
 }
-var test = makeNode("硫酸", 120)
-console.log(test)
+
+recipeList = loadData()
+supChain = makeChain("iron_ingot", 120)
+console.log(supChain)
 
 
 </script>

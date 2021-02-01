@@ -1,0 +1,1327 @@
+{
+    "recipes": {  
+        "iron_ore": {
+            "recipes": [{
+                "end": true,
+                "production_speed": 30,
+                "made_in": "mining_machine",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "iron_vein",
+                    "amount": 1
+                }]
+            }]
+        },
+        "copper_ore": {
+            "recipes": [{
+                "end": true,
+                "production_speed": 30,
+                "made_in": "mining_machine",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "copper_vein",
+                    "amount": 1
+                }]
+            }]
+        },
+        "stone_ore": {
+            "recipes": [{
+                "end": true,
+                "production_speed": 30,
+                "made_in": "mining_machine",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "stone_vein",
+                    "amount": 1
+                }]
+            }]
+        },
+        "coal_ore": {
+            "recipes": [{
+                "end": true,
+                "production_speed": 30,
+                "made_in": "mining_machine",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "coal_vein",
+                    "amount": 1
+                }]
+            }]
+        },
+        "silicon_ore": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 6,
+                "made_in": "smelter",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "stone_ore",
+                    "amount": 60
+                }]
+            },{    
+                "end": true,
+                "production_speed": 30,
+                "made_in": "mining_machine",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "silicon_vein",
+                    "amount": 1
+                }]
+            }]
+        },
+        "titanium_ore": {
+            "recipes": [{
+                "end": true,
+                "production_speed": 30,
+                "made_in": "mining_machine",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "titanium_vein",
+                    "amount": 1
+                }]
+            }]
+        },
+        "water": {
+            "recipes": [{
+                "end": true,
+                "production_speed": 60,
+                "made_in": "water_pump",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "ocean",
+                    "amount": 1
+                }]
+            }]
+        },
+        "crude_oil": {
+            "recipes": [{
+                "end": true,
+                "production_speed": 70,
+                "made_in": "oil_extractor",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "crude_oil_seep",
+                    "amount": 1
+                }]
+            }]
+        },
+        "hydrogen": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 15,
+                "made_in": "oil_refinery",
+                "byproduct": [{
+                    "name": "refined_oil",
+                    "amount": 30
+                }],
+                "ingredients": [{
+                    "name": "crude_oil",
+                    "amount": 30
+                }]
+            },{
+                "end": false,
+                "production_speed": 30,
+                "made_in": "chemical_plant",
+                "byproduct": [{
+                    "name": "graphene",
+                    "amount": 60
+                }],
+                "ingredients": [{
+                    "name": "fire_ice",
+                    "amount": 60
+                }]
+            },{
+                "end": false,
+                "production_speed": 45,
+                "made_in": "oil_refinery",
+                "byproduct": [{
+                    "name": "energetic_graphite",
+                    "amount": 15
+                }],
+                "ingredients": [{
+                    "name": "refined_oil",
+                    "amount": 15
+                },{
+                    "name": "hydrogen",
+                    "amount": 30
+                }]
+            },{
+                "end": false,
+                "production_speed": 60,
+                "made_in": "ray_receiver",
+                "byproduct": [{
+                    "name": "antimatter",
+                    "amount": 60
+                }],
+                "ingredients": [{
+                    "name": "crytical_photon",
+                    "amount": 60
+                }]
+            },{
+                "end": true,
+                "production_speed": 60,
+                "made_in": "orbit_collector",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "gas_giant_orbit",
+                    "amount": 1
+                }]
+            }]
+        },
+        "deuterium": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 60,
+                "made_in": "miniature_particle_collider",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "hydrogen",
+                    "amount": 600
+                }]
+            },{
+                "end": false,
+                "production_speed": 1,
+                "made_in": "fractionator",
+                "byproduct": [{
+                    "name": "hydrogen",
+                    "amount": 99
+                }],
+                "ingredients": [{
+                    "name": "hydrogen",
+                    "amount": 100
+                }]
+            },{
+                "end": true,
+                "production_speed": 60,
+                "made_in": "orbit_collector",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "gas_giant_orbit",
+                    "amount": 1
+                }]
+            }]
+        },
+        "antimatter": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 60,
+                "made_in": "miniature_particle_collider",
+                "byproduct": [{
+                    "name": "hydrogen",
+                    "amount": 60
+                }],
+                "ingredients": [{
+                    "name": "critical_photon",
+                    "amount": 60
+                }]
+            }]
+        },
+        "kimberlite_ore": {
+            "recipes": [{
+                "end": true,
+                "production_speed": 30,
+                "made_in": "mining_machine",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "kimberlite_vein",
+                    "amount": 1
+                }]
+            }]
+        },
+        "iron_ingot": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 60,
+                "made_in": "smelter",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "iron_ore",
+                    "amount": 60
+                }]
+            }]
+        },
+        "copper_ingot": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 60,
+                "made_in": "smelter",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "copper_ore",
+                    "amount": 60
+                }]
+            }]
+        },
+        "stone": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 60,
+                "made_in": "smelter",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "stone_ore",
+                    "amount": 60
+                }]
+            }]
+        },
+        "energetic_graphite": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 30,
+                "made_in": "smelter",
+                "byproduct": null,
+                "ingredients":[{
+                    "name": "coal_ore",
+                    "amount": 60
+                }]
+            },{
+                "end": false,
+                "production_speed": 15,
+                "made_in": "oil_refinery",
+                "byproduct": [{
+                    "name": "hydrogen",
+                    "amount": 45   
+                }],
+                "ingredients":[{
+                    "name": "refined_oil",
+                    "amount": 15
+                },{
+                    "name": "hydrogen",
+                    "amount": 30
+                }]
+            }]
+        },
+        "high_purity_silicon": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 30,
+                "made_in": "smelter",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "silicon_ore",
+                    "amount": 60
+                }]
+            }]
+        },
+        "titanium_ingot": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 30,
+                "made_in": "smelter",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "titanium_ore",
+                    "amount": 60
+                }]
+            }]
+        },
+        "sulfuric_acid": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 40,
+                "made_in": "chemical_plant",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "refined_oil",
+                    "amount": 60
+                },{
+                    "name": "stone_ore",
+                    "amount": 80
+                },{
+                    "name": "water",
+                    "amount": 40
+                }]
+            },{
+                "end": true,
+                "production_speed": 60,
+                "made_in": "water_pump",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "sulfuric_acid_ocean",
+                    "amount": 1
+                }]
+            }]
+        },
+        "refined_oil": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 30,
+                "made_in": "oil_refinery",
+                "byproduct": {
+                    "name": "hydrogen",
+                    "amount": 15
+                },
+                "ingredients": [{
+                    "name": "crude_oil",
+                    "amount": 30
+                }]
+            }]   
+        },
+        "hydrogen_fuel_rod": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 20,
+                "made_in": "assembler",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "titanium_ingot",
+                    "amount": 20
+                },{
+                    "name": "hydrogen",
+                    "amount": 100
+                }]
+            }]
+        },
+        "deuteron_fuel_rod": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 10,
+                "made_in": "assembler",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "titanium_alloy",
+                    "amount": 20
+                },{
+                    "name": "deuterium",
+                    "amount": 100
+                },{
+                    "name": "super_magnetic_ring",
+                    "amount": 10
+                }]
+            }]
+        },
+        "antimatter_fuel_rod": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 6,
+                "made_in": "assembler",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "antimatter",
+                    "amount": 60
+                },{
+                    "name": "hydrogen",
+                    "amount": 60
+                },{
+                    "name": "annihilation_constraint_sphere",
+                    "amount": 6
+                },{
+                    "name": "titanium_alloy",
+                    "amount": 6
+                }]
+            }]
+        },
+        "fractal_silicon": {
+            "recipes": [{
+                "end": true,
+                "production_speed": 30,
+                "made_in": "mining_machine",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "fractal_silicon_vein",
+                    "amount": 1
+                }]
+            }]
+        },
+        "magnet": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 40,
+                "made_in": "smelter",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "iron_ore",
+                    "amount": 40
+                }]
+            }]  
+        },
+        "magnetic_coil": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 120,
+                "made_in": "assembler",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "magnet",
+                    "amount": 120
+                },{
+                    "name": "copper_ingot",
+                    "amount": 60
+                }]
+            }]  
+        },
+        "glass": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 30,
+                "made_in": "smelter",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "stone_ore",
+                    "amount": 60
+                }]
+            }]  
+        },
+        "diamond": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 30,
+                "made_in": "smelter",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "energetic_graphite",
+                    "amount": 30
+                }]
+            },{
+                "end": false,
+                "production_speed": 30,
+                "made_in": "smelter",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "kimberlite_ore",
+                    "amount": 30
+                }]
+            }]
+        },
+        "crystal_silicon": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 60,
+                "made_in": "smelter",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "high_purity_silicon",
+                    "amount": 60
+                }]
+            },{
+                "end": false,
+                "production_speed": 60,
+                "made_in": "smelter",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "fractal_silicon",
+                    "amount": 60
+                }]
+            }]
+        },
+        "titanium_alloy": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 20,
+                "made_in": "smelter",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "titanium_ingot",
+                    "amount": 20
+                },{
+                    "name": "steel",
+                    "amount": 20
+                },{
+                    "name": "sulfuric_acid",
+                    "amount": 40
+                }]
+            }]
+        },
+        "fire_ice": {
+            "recipes": [{
+                "end": true,
+                "production_speed": 30,
+                "made_in": "mining_machine",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "fire_ice_vein",
+                    "amount": 1
+                }]
+            },{
+                "end": true,
+                "production_speed": 60,
+                "made_in": "orbit_collector",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "gas_giant_orbit",
+                    "amount": 1
+                }]
+            }]
+        },
+        "plastic": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 20,
+                "made_in": "chemical_plant",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "refined_oil",
+                    "amount": 40
+                },{
+                    "name": "energetic_graphite",
+                    "amount": 20
+                }]
+            }]
+        },
+        "organic_crystal": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 10,
+                "made_in": "chemical_plant",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "plastic",
+                    "amount": 20
+                },{
+                    "name": "refined_oil",
+                    "amount": 10
+                },{
+                    "name": "water",
+                    "amount": 10
+                }]
+            },{
+                "end": true,
+                "production_speed": 30,
+                "made_in": "mining_machine",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "organic_crystal_vein",
+                    "amount": 1
+                }]
+            }]
+        },
+        "graphene": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 40,
+                "made_in": "chemical_plant",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "energetic_graphite",
+                    "amount": 60
+                },{
+                    "name": "sulfuric_acid",
+                    "amount": 20
+                }]
+            },{
+                "end": false,
+                "production_speed": 60,
+                "made_in": "chemical_plant",
+                "byproduct": [{
+                    "name": "hydrogen",
+                    "amount": 30
+                }],
+                "ingredients": [{
+                    "name": "fire_ice",
+                    "amount": 60
+                }]
+            }]
+        },
+        "thruster": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 15,
+                "made_in": "assembler",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "steel",
+                    "amount": 30
+                },{
+                    "name": "copper_ingot",
+                    "amount": 45
+                }]
+            }]
+        },
+        "optical_grating_crystal": {
+            "recipes": [{
+                "end": true,
+                "production_speed": 30,
+                "made_in": "mining_machine",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "optical_grating_crystal_vein",
+                    "amount": 1
+                }] 
+            }]
+        },
+        "steel": {
+            "recipes": [{
+                "end": true,
+                "production_speed": 20,
+                "made_in": "smelter",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "iron_ingot",
+                    "amount": 60
+                }]
+            }]
+        },
+        "circuit_board": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 120,
+                "made_in": "assembler",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "iron_ingot",
+                    "amount": 120
+                },{
+                    "name": "copper_ingot",
+                    "amount": 60
+                }]
+            }]
+        },
+        "prism": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 60,
+                "made_in": "assembler",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "glass",
+                    "amount": 90
+                }]
+            }]
+        },
+        "electric_motor": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 30,
+                "made_in": "assembler",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "iron_ingot",
+                    "amount": 60
+                },{
+                    "name": "gear",
+                    "amount": 30
+                },{
+                    "name": "magnetic_coil",
+                    "amount": 30
+                }]
+            }]
+        },
+        "microcrystalline_component": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 30,
+                "made_in": "assembler",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "high_purity_silicon",
+                    "amount": 60
+                },{
+                    "name": "copper_ingot",
+                    "amount": 30
+                }]
+            }]
+        },
+        "casimir_crystal": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 15,
+                "made_in": "assembler",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "titanium_crystal",
+                    "amount": 15
+                },{
+                    "name": "graphene",
+                    "amount": 30
+                },{
+                    "name": "hydrogen",
+                    "amount": 180
+                }]
+            },{
+                "end": false,
+                "production_speed": 15,
+                "made_in": "assembler",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "optical_grating_crystal",
+                    "amount": 90
+                },{
+                    "name": "graphene",
+                    "amount": 30
+                },{
+                    "name": "hydrogen",
+                    "amount": 180
+                }]
+            }]
+        },
+        "strange_matter": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 7.5,
+                "made_in": "miniature_particle_collider",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "particle_container",
+                    "amount": 15
+                },{
+                    "name": "iron_ingot",
+                    "amount": 30
+                },{
+                    "name": "deuterium",
+                    "amount": 75
+                }]
+            }]
+        },
+        "titanium_crystal": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 15,
+                "made_in": "assembler",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "organic_crystal",
+                    "amount": 15
+                },{
+                    "name": "titanium_ingot",
+                    "amount": 45
+                }]
+            }]
+        },
+        "carbon_nanotube": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 30,
+                "made_in": "chemical_plant",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "graphene",
+                    "amount": 45
+                },{
+                    "name": "titanium_ingot",
+                    "amount": 15
+                }]
+            },{
+                "end": false,
+                "production_speed": 30,
+                "made_in": "chemical_plant",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "spiniform_stalagmite_crystal",
+                    "amount": 30
+                }]
+            }]
+        },
+        "reinforced_thruster": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 10,
+                "made_in": "assembler",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "titanium_alloy",
+                    "amount": 50
+                },{
+                    "name": "electromagnetic_turbine",
+                    "amount": 50
+                }]
+            }]
+        },
+        "spiniform_stalagmite_crystal": {
+            "recipes": [{
+                "end": true,
+                "production_speed": 30,
+                "made_in": "mining_machine",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "spiniform_stalagmite_crystal_vein",
+                    "amount": 1
+                }]
+            }]
+        },
+        "gear": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 60,
+                "made_in": "assembler",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "iron_ingot",
+                    "amount": 60
+                }]
+            }]
+        },
+        "plasma_exciter": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 30,
+                "made_in": "assembler",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "magnetic_coil",
+                    "amount": 120
+                },{
+                    "name": "prism",
+                    "amount": 60
+                }]
+            }]
+        },
+        "photon_combiner": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 20,
+                "made_in": "assembler",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "prism",
+                    "amount": 40
+                },{
+                    "name": "circuit_board",
+                    "amount": 20
+                }]
+            },{
+                "end": false,
+                "production_speed": 20,
+                "made_in": "assembler",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "optical_grating_crystal",
+                    "amount": 20
+                },{
+                    "name": "circuit_board",
+                    "amount": 20
+                }]
+            }]
+        },
+        "electromagnetic_turbine": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 30,
+                "made_in": "assembler",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "magnetic_coil",
+                    "amount": 60
+                },{
+                    "name": "electric_motor",
+                    "amount": 60
+                }]
+            }]
+        },
+        "processor": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 20,
+                "made_in": "assembler",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "circuit_board",
+                    "amount": 40
+                },{
+                    "name": "microcrystalline_component",
+                    "amount": 40
+                }]
+            }]
+        },
+        "annihilation_constraint_sphere": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 3,
+                "made_in": "assembler",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "particle_container",
+                    "amount": 3
+                },{
+                    "name": "processor",
+                    "amount": 3
+                }]
+            }]
+        },
+        "titanium_glass": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 24,
+                "made_in": "assembler",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "glass",
+                    "amount": 24
+                },{
+                    "name": "titanium_ingot",
+                    "amount": 24
+                },{
+                    "name": "water",
+                    "amount": 24
+                }]
+            }]
+        },
+        "particle_broadband": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 7.5,
+                "made_in": "assembler",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "carbon_nanotube",
+                    "amount": 15
+                },{
+                    "name": "crystal_silicon",
+                    "amount": 15
+                },{
+                    "name": "plastic",
+                    "amount": 7.5
+                }]
+            }]
+        },
+        "logistics_drone": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 15,
+                "made_in": "assembler",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "iron_ingot",
+                    "amount": 75
+                },{
+                    "name": "processor",
+                    "amount": 30
+                },{
+                    "name": "thruster",
+                    "amount": 30
+                }]
+            }]
+        },
+        "unipolar_magnet": {
+            "recipes": [{
+                "end": true,
+                "production_speed": 30,
+                "made_in": "mining_machine",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "unipolar_magnet_vein",
+                    "amount": 1
+                }]
+            }]
+        },
+        "foundation": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 60,
+                "made_in": "assembler",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "stone",
+                    "amount": 180
+                },{
+                    "name": "steel",
+                    "amount": 60
+                }]
+            }]
+        },
+        "critical_photon": {
+            "recipes": [{
+                "end": true,
+                "production_speed": 1,
+                "made_in": "ray_receiver",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "ray_receiver",
+                    "amount": 1
+                }]
+            }]
+        },
+        "particle_container": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 15,
+                "made_in": "assembler",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "electromagnetic_turbine",
+                    "amount": 30
+                },{
+                    "name": "copper_ingot",
+                    "amount": 30
+                },{
+                    "name": "graphene",
+                    "amount": 30
+                }]
+            },{
+                "end": false,
+                "production_speed": 15,
+                "made_in": "assembler",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "unipolar_magnet",
+                    "amount": 150
+                },{
+                    "name": "copper_ingot",
+                    "amount": 30
+                }]
+            }]
+        },
+        "super_magnetic_ring": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 20,
+                "made_in": "assembler",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "electromagnetic_turbine",
+                    "amount": 40
+                },{
+                    "name": "magnet",
+                    "amount": 60
+                },{
+                    "name": "energetic_graphite",
+                    "amount": 20
+                }]
+            }]
+        },
+        "graviton_lens": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 10,
+                "made_in": "assembler",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "diamond",
+                    "amount": 40
+                },{
+                    "name": "strange_matter",
+                    "amount": 10
+                }]
+            }]  
+        },
+        "space_warper": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 6,
+                "made_in": "assembler",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "graviton_lens",
+                    "amount": 6
+                }]
+            },{
+                "end": false,
+                "production_speed": 6,
+                "made_in": "assembler",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "green_matrix",
+                    "amount": 6
+                }]
+            }]
+        },
+        "plane_filter": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 5,
+                "made_in": "assembler",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "casimir_crystal",
+                    "amount": 5
+                },{
+                    "name": "titanium_glass",
+                    "amount": 10
+                }]
+            }]
+        },
+        "quantum_chip": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 10,
+                "made_in": "assembler",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "processor",
+                    "amount": 20
+                },{
+                    "name": "titanium_glass",
+                    "amount": 20
+                }]
+            }]
+        },
+        "logistics_vessel": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 10,
+                "made_in": "assembler",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "titanium_alloy",
+                    "amount": 100
+                },{
+                    "name": "processor",
+                    "amount": 100
+                },{
+                    "name": "reinforced_thruster",
+                    "amount": 20
+                }]
+            }]
+        },
+        "blue_matrix": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 20,
+                "made_in": "matrix_lab",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "magnetic_coil",
+                    "amount": 20
+                },{
+                    "name": "circuit_board",
+                    "amount": 20
+                }]
+            }]
+        },
+        "red_matrix": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 10,
+                "made_in": "matrix_lab",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "energetic_graphite",
+                    "amount": 20
+                },{
+                    "name": "hydrogen",
+                    "amount": 20
+                }]
+            }]
+        },
+        "yellow_matrix": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 7.5,
+                "made_in": "matrix_lab",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "diamond",
+                    "amount": 7.5
+                },{
+                    "name": "titanium_crystal",
+                    "amount": 7.5
+                }]
+            }]
+        },
+        "purple_matrix": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 6,
+                "made_in": "matrix_lab",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "processor",
+                    "amount": 12
+                },{
+                    "name": "particle_broadband",
+                    "amount": 6
+                }]
+            }]
+        },
+        "green_matrix": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 2.5,
+                "made_in": "matrix_lab",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "graviton_lens",
+                    "amount": 2.5
+                },{
+                    "name": "quantum_chip",
+                    "amount": 2.5
+                }]
+            }]
+        },
+        "white_matrix": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 4,
+                "made_in": "matrix_lab",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "blue_matrix",
+                    "amount": 4
+                },{
+                    "name": "red_matrix",
+                    "amount": 4
+                },{
+                    "name": "yellow_matrix",
+                    "amount": 4
+                },{
+                    "name": "purple_matrix",
+                    "amount": 4
+                },{
+                    "name": "green_matrix",
+                    "amount": 4
+                },{
+                    "name": "antimatter",
+                    "amount": 4
+                }]
+            }]
+        },
+        "solar_sail": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 30,
+                "made_in": "assembler",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "graphene",
+                    "amount": 15
+                },{
+                    "name": "photon_combiner",
+                    "amount": 15
+                }]
+            }]
+        },
+        "frame_material": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 10,
+                "made_in": "assembler",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "carbon_nanotube",
+                    "amount": 40
+                },{
+                    "name": "titanium_alloy",
+                    "amount": 10
+                },{
+                    "name": "high_purity_silicon",
+                    "amount": 10
+                }]
+            }]
+        },
+        "dyson_sphere_component": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 7.5,
+                "made_in": "assembler",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "frame_material",
+                    "amount": 22.5
+                },{
+                    "name": "solar_sail",
+                    "amount": 22.5
+                },{
+                    "name": "processor",
+                    "amount": 22.5
+                }]
+            }]
+        },
+        "small_carrier_rocket": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 10,
+                "made_in": "assembler",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "dyson_sphere_component",
+                    "amount": 20
+                },{
+                    "name": "deuteron_fuel_rod",
+                    "amount": 20
+                },{
+                    "name": "quantum_chip",
+                    "amount": 20
+                }]
+            }]
+        }
+    }
+}

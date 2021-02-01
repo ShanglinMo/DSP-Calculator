@@ -1,1326 +1,1324 @@
 {
     "recipes": {  
-        "iron_ore": {
-            "nameCN": "铁矿石",
-            "nameEN": "iron_ore",
+        "铁矿": {
             "recipes": [{
                 "end": true,
                 "production_speed": 30,
-                "made_in": "mining_machine",
+                "made_in": "采矿机",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "iron_vein",
+                    "name": "铁矿脉",
                     "amount": 1
                 }]
             }]
         },
-        "copper_ore": {
+        "铜矿": {
             "recipes": [{
                 "end": true,
                 "production_speed": 30,
-                "made_in": "mining_machine",
+                "made_in": "采矿机",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "copper_vein",
+                    "name": "铜矿脉",
                     "amount": 1
                 }]
             }]
         },
-        "stone_ore": {
+        "石矿": {
             "recipes": [{
                 "end": true,
                 "production_speed": 30,
-                "made_in": "mining_machine",
+                "made_in": "采矿机",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "stone_vein",
+                    "name": "石矿脉",
                     "amount": 1
                 }]
             }]
         },
-        "coal_ore": {
+        "煤矿": {
             "recipes": [{
                 "end": true,
                 "production_speed": 30,
-                "made_in": "mining_machine",
+                "made_in": "采矿机",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "coal_vein",
+                    "name": "煤矿脉",
                     "amount": 1
                 }]
             }]
         },
-        "silicon_ore": {
+        "硅石": {
             "recipes": [{
                 "end": false,
                 "production_speed": 6,
-                "made_in": "smelter",
+                "made_in": "电弧熔炉",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "stone_ore",
+                    "name": "石矿",
                     "amount": 60
                 }]
             },{    
                 "end": true,
                 "production_speed": 30,
-                "made_in": "mining_machine",
+                "made_in": "采矿机",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "silicon_vein",
+                    "name": "硅矿",
                     "amount": 1
                 }]
             }]
         },
-        "titanium_ore": {
+        "钛石": {
             "recipes": [{
                 "end": true,
                 "production_speed": 30,
-                "made_in": "mining_machine",
+                "made_in": "采矿机",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "titanium_vein",
+                    "name": "钛矿",
                     "amount": 1
                 }]
             }]
         },
-        "water": {
+        "水": {
             "recipes": [{
                 "end": true,
                 "production_speed": 60,
-                "made_in": "water_pump",
+                "made_in": "抽水站",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "ocean",
+                    "name": "海洋",
                     "amount": 1
                 }]
             }]
         },
-        "crude_oil": {
+        "原油": {
             "recipes": [{
                 "end": true,
                 "production_speed": 70,
-                "made_in": "oil_extractor",
+                "made_in": "原油萃取站",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "crude_oil_seep",
+                    "name": "原油涌泉",
                     "amount": 1
                 }]
             }]
         },
-        "hydrogen": {
+        "氢": {
             "recipes": [{
                 "end": false,
                 "production_speed": 15,
-                "made_in": "oil_refinery",
+                "made_in": "原油精炼厂",
                 "byproduct": [{
-                    "name": "refined_oil",
+                    "name": "精炼油",
                     "amount": 30
                 }],
                 "ingredients": [{
-                    "name": "crude_oil",
+                    "name": "原油",
                     "amount": 30
                 }]
             },{
                 "end": false,
                 "production_speed": 30,
-                "made_in": "chemical_plant",
+                "made_in": "化工厂",
                 "byproduct": [{
-                    "name": "graphene",
+                    "name": "石墨烯",
                     "amount": 60
                 }],
                 "ingredients": [{
-                    "name": "fire_ice",
+                    "name": "可燃冰",
                     "amount": 60
                 }]
             },{
                 "end": false,
                 "production_speed": 45,
-                "made_in": "oil_refinery",
+                "made_in": "原油精炼厂",
                 "byproduct": [{
-                    "name": "energetic_graphite",
+                    "name": "高能石墨",
                     "amount": 15
                 }],
                 "ingredients": [{
-                    "name": "refined_oil",
+                    "name": "精炼油",
                     "amount": 15
                 },{
-                    "name": "hydrogen",
+                    "name": "氢",
                     "amount": 30
                 }]
             },{
                 "end": false,
                 "production_speed": 60,
-                "made_in": "ray_receiver",
+                "made_in": "射线接收站",
                 "byproduct": [{
-                    "name": "antimatter",
+                    "name": "反物质",
                     "amount": 60
                 }],
                 "ingredients": [{
-                    "name": "crytical_photon",
+                    "name": "临界光子",
                     "amount": 60
                 }]
             },{
                 "end": true,
                 "production_speed": 60,
-                "made_in": "orbit_collector",
+                "made_in": "轨道采集器",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "gas_giant_orbit",
+                    "name": "气态行星",
                     "amount": 1
                 }]
             }]
         },
-        "deuterium": {
+        "重氢": {
             "recipes": [{
                 "end": false,
                 "production_speed": 60,
-                "made_in": "miniature_particle_collider",
+                "made_in": "微型粒子对撞机",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "hydrogen",
+                    "name": "氢",
                     "amount": 600
                 }]
             },{
                 "end": false,
                 "production_speed": 1,
-                "made_in": "fractionator",
+                "made_in": "分馏塔",
                 "byproduct": [{
-                    "name": "hydrogen",
+                    "name": "氢",
                     "amount": 99
                 }],
                 "ingredients": [{
-                    "name": "hydrogen",
+                    "name": "氢",
                     "amount": 100
                 }]
             },{
                 "end": true,
                 "production_speed": 60,
-                "made_in": "orbit_collector",
+                "made_in": "轨道采集器",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "gas_giant_orbit",
+                    "name": "气态行星",
                     "amount": 1
                 }]
             }]
         },
-        "antimatter": {
+        "反物质": {
             "recipes": [{
                 "end": false,
                 "production_speed": 60,
-                "made_in": "miniature_particle_collider",
+                "made_in": "微型粒子对撞机",
                 "byproduct": [{
-                    "name": "hydrogen",
+                    "name": "氢",
                     "amount": 60
                 }],
                 "ingredients": [{
-                    "name": "critical photon",
+                    "name": "临界光子",
                     "amount": 60
                 }]
             }]
         },
-        "kimberlite_ore": {
+        "金伯利矿石": {
             "recipes": [{
                 "end": true,
                 "production_speed": 30,
-                "made_in": "mining_machine",
+                "made_in": "采矿机",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "kimberlite_vein",
+                    "name": "金伯利矿石脉",
                     "amount": 1
                 }]
             }]
         },
-        "iron_ingot": {
+        "铁块": {
             "recipes": [{
                 "end": false,
                 "production_speed": 60,
-                "made_in": "smelter",
+                "made_in": "电弧熔炉",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "iron_ore",
+                    "name": "铁矿",
                     "amount": 60
                 }]
             }]
         },
-        "copper_ingot": {
+        "铜块": {
             "recipes": [{
                 "end": false,
                 "production_speed": 60,
-                "made_in": "smelter",
+                "made_in": "电弧熔炉",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "copper_ore",
+                    "name": "铜矿",
                     "amount": 60
                 }]
             }]
         },
-        "stone": {
+        "石材": {
             "recipes": [{
                 "end": false,
                 "production_speed": 60,
-                "made_in": "smelter",
+                "made_in": "电弧熔炉",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "stone_ore",
+                    "name": "石矿",
                     "amount": 60
                 }]
             }]
         },
-        "energetic_graphite": {
+        "高能石墨": {
             "recipes": [{
                 "end": false,
                 "production_speed": 30,
-                "made_in": "smelter",
+                "made_in": "电弧熔炉",
                 "byproduct": null,
                 "ingredients":[{
-                    "name": "coal_ore",
+                    "name": "煤矿",
                     "amount": 60
                 }]
             },{
                 "end": false,
                 "production_speed": 15,
-                "made_in": "oil_refinery",
+                "made_in": "原油精炼厂",
                 "byproduct": [{
-                    "name": "hydrogen",
+                    "name": "氢",
                     "amount": 45   
                 }],
                 "ingredients":[{
-                    "name": "refined_oil",
+                    "name": "精炼油",
                     "amount": 15
                 },{
-                    "name": "hydrogen",
+                    "name": "氢",
                     "amount": 30
                 }]
             }]
         },
-        "high_purity_silicon": {
+        "高纯硅块": {
             "recipes": [{
                 "end": false,
                 "production_speed": 30,
-                "made_in": "smelter",
+                "made_in": "电弧熔炉",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "silicon_ore",
+                    "name": "硅石",
                     "amount": 60
                 }]
             }]
         },
-        "titanium_ingot": {
+        "钛块": {
             "recipes": [{
                 "end": false,
                 "production_speed": 30,
-                "made_in": "smelter",
+                "made_in": "电弧熔炉",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "titanium_ore",
+                    "name": "钛石",
                     "amount": 60
                 }]
             }]
         },
-        "sulfuric_acid": {
+        "硫酸": {
             "recipes": [{
                 "end": false,
                 "production_speed": 40,
-                "made_in": "chemical_plant",
+                "made_in": "化工厂",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "refined_oil",
+                    "name": "精炼油",
                     "amount": 60
                 },{
-                    "name": "stone_ore",
+                    "name": "石矿",
                     "amount": 80
                 },{
-                    "name": "water",
+                    "name": "水",
                     "amount": 40
                 }]
             },{
                 "end": true,
                 "production_speed": 60,
-                "made_in": "water_pump",
+                "made_in": "抽水站",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "sulfuric_acid_ocean",
+                    "name": "硫酸海洋",
                     "amount": 1
                 }]
             }]
         },
-        "refined_oil": {
+        "精炼油": {
             "recipes": [{
                 "end": false,
                 "production_speed": 30,
-                "made_in": "oil_refinery",
+                "made_in": "原油精炼厂",
                 "byproduct": {
-                    "name": "hydrogen",
+                    "name": "氢",
                     "amount": 15
                 },
                 "ingredients": [{
-                    "name": "crude_oil",
+                    "name": "原油",
                     "amount": 30
                 }]
             }]   
         },
-        "hydrogen_fuel_rod": {
+        "液氢燃料棒": {
             "recipes": [{
                 "end": false,
                 "production_speed": 20,
-                "made_in": "assembler",
+                "made_in": "制造台",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "titanium_ingot",
+                    "name": "钛块",
                     "amount": 20
                 },{
-                    "name": "hydrogen",
+                    "name": "氢",
                     "amount": 100
                 }]
             }]
         },
-        "deuteron_fuel_rod": {
+        "氘核燃料棒": {
             "recipes": [{
                 "end": false,
                 "production_speed": 10,
-                "made_in": "assembler",
+                "made_in": "制造台",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "titanium_alloy",
+                    "name": "钛合金",
                     "amount": 20
                 },{
-                    "name": "deuterium",
+                    "name": "重氢",
                     "amount": 100
                 },{
-                    "name": "super_magnetic_ring",
+                    "name": "超级磁场环",
                     "amount": 10
                 }]
             }]
         },
-        "antimatter_fuel_rod": {
+        "反物质燃料棒": {
             "recipes": [{
                 "end": false,
                 "production_speed": 6,
-                "made_in": "assembler",
+                "made_in": "制造台",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "antimatter",
+                    "name": "反物质",
                     "amount": 60
                 },{
-                    "name": "hydrogen",
+                    "name": "氢",
                     "amount": 60
                 },{
-                    "name": "annihilation_constraint_sphere",
+                    "name": "湮灭约束球",
                     "amount": 6
                 },{
-                    "name": "titanium_alloy",
+                    "name": "钛合金",
                     "amount": 6
                 }]
             }]
         },
-        "fractal_silicon": {
+        "分形硅石": {
             "recipes": [{
                 "end": true,
                 "production_speed": 30,
-                "made_in": "mining_machine",
+                "made_in": "采矿机",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "fractal_silicon_vein",
+                    "name": "分形硅矿",
                     "amount": 1
                 }]
             }]
         },
-        "magnet": {
+        "磁铁": {
             "recipes": [{
                 "end": false,
                 "production_speed": 40,
-                "made_in": "smelter",
+                "made_in": "电弧熔炉",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "iron_ore",
+                    "name": "铁矿",
                     "amount": 40
                 }]
             }]  
         },
-        "magnetic_coil": {
+        "磁线圈": {
             "recipes": [{
                 "end": false,
                 "production_speed": 120,
-                "made_in": "assembler",
+                "made_in": "制造台",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "magnet",
+                    "name": "磁铁",
                     "amount": 120
                 },{
-                    "name": "copper_ingot",
+                    "name": "铜块",
                     "amount": 60
                 }]
             }]  
         },
-        "glass": {
+        "玻璃": {
             "recipes": [{
                 "end": false,
                 "production_speed": 30,
-                "made_in": "smelter",
+                "made_in": "电弧熔炉",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "stone_ore",
+                    "name": "石矿",
                     "amount": 60
                 }]
             }]  
         },
-        "diamond": {
+        "金刚石": {
             "recipes": [{
                 "end": false,
                 "production_speed": 30,
-                "made_in": "smelter",
+                "made_in": "电弧熔炉",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "energetic_graphite",
+                    "name": "高能石墨",
                     "amount": 30
                 }]
             },{
                 "end": false,
                 "production_speed": 30,
-                "made_in": "smelter",
+                "made_in": "电弧熔炉",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "kimberlite_ore",
+                    "name": "金伯利矿石",
                     "amount": 30
                 }]
             }]
         },
-        "crystal_silicon": {
+        "晶格硅": {
             "recipes": [{
                 "end": false,
                 "production_speed": 60,
-                "made_in": "smelter",
+                "made_in": "电弧熔炉",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "silicon_ingot",
+                    "name": "高纯硅块",
                     "amount": 60
                 }]
             },{
                 "end": false,
                 "production_speed": 60,
-                "made_in": "smelter",
+                "made_in": "电弧熔炉",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "fractal_silicon",
+                    "name": "分形硅石",
                     "amount": 60
                 }]
             }]
         },
-        "titanium_alloy": {
+        "钛合金": {
             "recipes": [{
                 "end": false,
                 "production_speed": 20,
-                "made_in": "smelter",
+                "made_in": "电弧熔炉",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "titannium_ingot",
+                    "name": "钛块",
                     "amount": 20
                 },{
-                    "name": "steel",
+                    "name": "钢材",
                     "amount": 20
                 },{
-                    "name": "sulfuric_acid",
+                    "name": "硫酸",
                     "amount": 40
                 }]
             }]
         },
-        "fire_ice": {
+        "可燃冰": {
             "recipes": [{
                 "end": true,
                 "production_speed": 30,
-                "made_in": "mining_machine",
+                "made_in": "采矿机",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "fire_ice_vein",
+                    "name": "可燃冰矿",
                     "amount": 1
                 }]
             },{
                 "end": true,
                 "production_speed": 60,
-                "made_in": "orbit_collector",
+                "made_in": "轨道采集器",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "gas_giant_orbit",
+                    "name": "气态行星",
                     "amount": 1
                 }]
             }]
         },
-        "plastic": {
+        "塑料": {
             "recipes": [{
                 "end": false,
                 "production_speed": 20,
-                "made_in": "chemical_plant",
+                "made_in": "化工厂",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "refined_oil",
+                    "name": "精炼油",
                     "amount": 40
                 },{
-                    "name": "energetic_graphite",
+                    "name": "高能石墨",
                     "amount": 20
                 }]
             }]
         },
-        "organic_crystal": {
+        "有机晶体": {
             "recipes": [{
                 "end": false,
                 "production_speed": 10,
-                "made_in": "chemical_plant",
+                "made_in": "化工厂",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "plastic",
+                    "name": "塑料",
                     "amount": 20
                 },{
-                    "name": "refined_oil",
+                    "name": "精炼油",
                     "amount": 10
                 },{
-                    "name": "water",
+                    "name": "水",
                     "amount": 10
                 }]
             },{
                 "end": true,
                 "production_speed": 30,
-                "made_in": "mining_machine",
+                "made_in": "采矿机",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "organic_crystal_vein",
+                    "name": "有机晶体矿",
                     "amount": 1
                 }]
             }]
         },
-        "graphene": {
+        "石墨烯": {
             "recipes": [{
                 "end": false,
                 "production_speed": 40,
-                "made_in": "chemical_plant",
+                "made_in": "化工厂",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "energetic_graphite",
+                    "name": "高能石墨",
                     "amount": 60
                 },{
-                    "name": "sulfuric_acid",
+                    "name": "硫酸",
                     "amount": 20
                 }]
             },{
                 "end": false,
                 "production_speed": 60,
-                "made_in": "chemical_plant",
+                "made_in": "化工厂",
                 "byproduct": [{
-                    "name": "hydrogen",
+                    "name": "氢",
                     "amount": 30
                 }],
                 "ingredients": [{
-                    "name": "fire_ice",
+                    "name": "可燃冰",
                     "amount": 60
                 }]
             }]
         },
-        "thruster": {
+        "推进器": {
             "recipes": [{
                 "end": false,
                 "production_speed": 15,
-                "made_in": "assembler",
+                "made_in": "制造台",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "steel",
+                    "name": "钢材",
                     "amount": 30
                 },{
-                    "name": "copper_ingot",
+                    "name": "铜块",
                     "amount": 45
                 }]
             }]
         },
-        "optical_grating_crystal": {
+        "光栅石": {
             "recipes": [{
                 "end": true,
                 "production_speed": 30,
-                "made_in": "mining_machine",
+                "made_in": "采矿机",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "optical_grating_crystal_vein",
+                    "name": "光栅石矿",
                     "amount": 1
                 }] 
             }]
         },
-        "steel": {
+        "钢材": {
             "recipes": [{
                 "end": true,
                 "production_speed": 20,
-                "made_in": "smelter",
+                "made_in": "电弧熔炉",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "iron_ingot",
+                    "name": "铁块",
                     "amount": 60
                 }]
             }]
         },
-        "circuit_board": {
+        "电路板": {
             "recipes": [{
                 "end": false,
                 "production_speed": 120,
-                "made_in": "assembler",
+                "made_in": "制造台",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "iron_ingot",
+                    "name": "铁块",
                     "amount": 120
                 },{
-                    "name": "copper_ingot",
+                    "name": "铜块",
                     "amount": 60
                 }]
             }]
         },
-        "prism": {
+        "棱镜": {
             "recipes": [{
                 "end": false,
                 "production_speed": 60,
-                "made_in": "assembler",
+                "made_in": "制造台",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "glass",
+                    "name": "玻璃",
                     "amount": 90
                 }]
             }]
         },
-        "electric_motor": {
+        "电动机": {
             "recipes": [{
                 "end": false,
                 "production_speed": 30,
-                "made_in": "assembler",
+                "made_in": "制造台",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "iron_ingot",
+                    "name": "铁块",
                     "amount": 60
                 },{
-                    "name": "gear",
+                    "name": "齿轮",
                     "amount": 30
                 },{
-                    "name": "magnetic_coil",
+                    "name": "磁线圈",
                     "amount": 30
                 }]
             }]
         },
-        "microcrystalline_component": {
+        "微晶元件": {
             "recipes": [{
                 "end": false,
                 "production_speed": 30,
-                "made_in": "assembler",
+                "made_in": "制造台",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "high_purity_silicon",
+                    "name": "高纯硅块",
                     "amount": 60
                 },{
-                    "name": "copper_ingot",
+                    "name": "铜块",
                     "amount": 30
                 }]
             }]
         },
-        "casimir_crystal": {
+        "卡西米尔晶体": {
             "recipes": [{
                 "end": false,
                 "production_speed": 15,
-                "made_in": "assembler",
+                "made_in": "制造台",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "titanium_crystal",
+                    "name": "钛晶石",
                     "amount": 15
                 },{
-                    "name": "graphene",
+                    "name": "石墨烯",
                     "amount": 30
                 },{
-                    "name": "hydrogen",
+                    "name": "氢",
                     "amount": 180
                 }]
             },{
                 "end": false,
                 "production_speed": 15,
-                "made_in": "assembler",
+                "made_in": "制造台",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "opyocal_grating_crystal",
+                    "name": "光栅石",
                     "amount": 90
                 },{
-                    "name": "graphene",
+                    "name": "石墨烯",
                     "amount": 30
                 },{
-                    "name": "hydrogen",
+                    "name": "氢",
                     "amount": 180
                 }]
             }]
         },
-        "strange_matter": {
+        "奇异物质": {
             "recipes": [{
                 "end": false,
                 "production_speed": 7.5,
-                "made_in": "miniature_particle_collider",
+                "made_in": "微型粒子对撞机",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "particle_container",
+                    "name": "粒子容器",
                     "amount": 15
                 },{
-                    "name": "iron_ingot",
+                    "name": "铁块",
                     "amount": 30
                 },{
-                    "name": "deuterium",
+                    "name": "重氢",
                     "amount": 75
                 }]
             }]
         },
-        "titanium_crystal": {
+        "钛晶石": {
             "recipes": [{
                 "end": false,
                 "production_speed": 15,
-                "made_in": "assembler",
+                "made_in": "制造台",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "organic_crystal",
+                    "name": "有机晶体",
                     "amount": 15
                 },{
-                    "name": "titanium_ingot",
+                    "name": "钛块",
                     "amount": 45
                 }]
             }]
         },
-        "carbon_nanotube": {
+        "碳纳米管": {
             "recipes": [{
                 "end": false,
                 "production_speed": 30,
-                "made_in": "chemical_plant",
+                "made_in": "化工厂",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "graphene",
+                    "name": "石墨烯",
                     "amount": 45
                 },{
-                    "name": "titanium_ingot",
+                    "name": "钛块",
                     "amount": 15
                 }]
             },{
                 "end": false,
                 "production_speed": 30,
-                "made_in": "chemical_plant",
+                "made_in": "化工厂",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "spiniform_stalagmite_crystal",
+                    "name": "刺笋结晶",
                     "amount": 30
                 }]
             }]
         },
-        "reinforced_thruster": {
+        "加力推进器": {
             "recipes": [{
                 "end": false,
                 "production_speed": 10,
-                "made_in": "assembler",
+                "made_in": "制造台",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "titanium_alloy",
+                    "name": "钛合金",
                     "amount": 50
                 },{
-                    "name": "electromagnetic_turbine",
+                    "name": "电磁涡轮",
                     "amount": 50
                 }]
             }]
         },
-        "spiniform_stalagmite_crystal": {
+        "刺笋结晶": {
             "recipes": [{
                 "end": true,
                 "production_speed": 30,
-                "made_in": "mining_machine",
+                "made_in": "采矿机",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "spiniform_stalagmite_crystal_vein",
+                    "name": "刺笋矿脉",
                     "amount": 1
                 }]
             }]
         },
-        "gear": {
+        "齿轮": {
             "recipes": [{
                 "end": false,
                 "production_speed": 60,
-                "made_in": "assembler",
+                "made_in": "制造台",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "iron_ingot",
+                    "name": "铁块",
                     "amount": 60
                 }]
             }]
         },
-        "plasma_exciter": {
+        "电浆激发器": {
             "recipes": [{
                 "end": false,
                 "production_speed": 30,
-                "made_in": "assembler",
+                "made_in": "制造台",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "magnetic_coil",
+                    "name": "磁线圈",
                     "amount": 120
                 },{
-                    "name": "prism",
+                    "name": "棱镜",
                     "amount": 60
                 }]
             }]
         },
-        "photon_combiner": {
+        "光子合并器": {
             "recipes": [{
                 "end": false,
                 "production_speed": 20,
-                "made_in": "assembler",
+                "made_in": "制造台",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "prism",
+                    "name": "棱镜",
                     "amount": 40
                 },{
-                    "name": "circuit_board",
+                    "name": "电路板",
                     "amount": 20
                 }]
             },{
                 "end": false,
                 "production_speed": 20,
-                "made_in": "assembler",
+                "made_in": "制造台",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "optical_grating_crystal",
+                    "name": "光栅石",
                     "amount": 20
                 },{
-                    "name": "circuit_board",
+                    "name": "电路板",
                     "amount": 20
                 }]
             }]
         },
-        "electromagnetic_turbine": {
+        "电磁涡轮": {
             "recipes": [{
                 "end": false,
                 "production_speed": 30,
-                "made_in": "assembler",
+                "made_in": "制造台",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "magnetic_coil",
+                    "name": "磁线圈",
                     "amount": 60
                 },{
-                    "name": "electric_motor",
+                    "name": "电动机",
                     "amount": 60
                 }]
             }]
         },
-        "processor": {
+        "处理器": {
             "recipes": [{
                 "end": false,
                 "production_speed": 20,
-                "made_in": "assembler",
+                "made_in": "制造台",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "circuit_board",
+                    "name": "电路板",
                     "amount": 40
                 },{
-                    "name": "microcrystalline_component",
+                    "name": "微晶元件",
                     "amount": 40
                 }]
             }]
         },
-        "annihilation_constraint_sphere": {
+        "湮灭约束球": {
             "recipes": [{
                 "end": false,
                 "production_speed": 3,
-                "made_in": "assembler",
+                "made_in": "制造台",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "particle_container",
+                    "name": "粒子容器",
                     "amount": 3
                 },{
-                    "name": "processor",
+                    "name": "处理器",
                     "amount": 3
                 }]
             }]
         },
-        "titanium_glass": {
+        "钛化玻璃": {
             "recipes": [{
                 "end": false,
                 "production_speed": 24,
-                "made_in": "assembler",
+                "made_in": "制造台",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "glass",
+                    "name": "玻璃",
                     "amount": 24
                 },{
-                    "name": "titanium_ingot",
+                    "name": "钛块",
                     "amount": 24
                 },{
-                    "name": "water",
+                    "name": "水",
                     "amount": 24
                 }]
             }]
         },
-        "particle_broadband": {
+        "粒子宽带": {
             "recipes": [{
                 "end": false,
                 "production_speed": 7.5,
-                "made_in": "assembler",
+                "made_in": "制造台",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "carbon_nanotube",
+                    "name": "碳纳米管",
                     "amount": 15
                 },{
-                    "name": "crystal_silicon",
+                    "name": "晶格硅",
                     "amount": 15
                 },{
-                    "name": "plastic",
+                    "name": "塑料",
                     "amount": 7.5
                 }]
             }]
         },
-        "logistics_drone": {
+        "物流运输机": {
             "recipes": [{
                 "end": false,
                 "production_speed": 15,
-                "made_in": "assembler",
+                "made_in": "制造台",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "iron_ingot",
+                    "name": "铁块",
                     "amount": 75
                 },{
-                    "name": "processor",
+                    "name": "处理器",
                     "amount": 30
                 },{
-                    "name": "thruster",
+                    "name": "推进器",
                     "amount": 30
                 }]
             }]
         },
-        "unipolar_magnet": {
+        "单极磁石": {
             "recipes": [{
                 "end": true,
                 "production_speed": 30,
-                "made_in": "mining_machine",
+                "made_in": "采矿机",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "unipolar_magnet_vein",
+                    "name": "单极磁矿",
                     "amount": 1
                 }]
             }]
         },
-        "foundation": {
+        "地基": {
             "recipes": [{
                 "end": false,
                 "production_speed": 60,
-                "made_in": "assembler",
+                "made_in": "制造台",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "stone",
+                    "name": "石材",
                     "amount": 180
                 },{
-                    "name": "steel",
+                    "name": "钢材",
                     "amount": 60
                 }]
             }]
         },
-        "critical photon": {
+        "临界光子": {
             "recipes": [{
                 "end": true,
                 "production_speed": 1,
-                "made_in": "ray_receiver",
+                "made_in": "射线接收站",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "ray_receiver",
+                    "name": "射线接收站",
                     "amount": 1
                 }]
             }]
         },
-        "particle_countainer": {
+        "粒子容器": {
             "recipes": [{
                 "end": false,
                 "production_speed": 15,
-                "made_in": "assembler",
+                "made_in": "制造台",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "electromagnetic_tuibine",
+                    "name": "电磁涡轮",
                     "amount": 30
                 },{
-                    "name": "copper_ingot",
+                    "name": "铜块",
                     "amount": 30
                 },{
-                    "name": "graphene",
+                    "name": "石墨烯",
                     "amount": 30
                 }]
             },{
                 "end": false,
                 "production_speed": 15,
-                "made_in": "assembler",
+                "made_in": "制造台",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "unipolar_magnet",
+                    "name": "单极磁石",
                     "amount": 150
                 },{
-                    "name": "copper_ingot",
+                    "name": "铜块",
                     "amount": 30
                 }]
             }]
         },
-        "super_magnetic_ring": {
+        "超级磁场环": {
             "recipes": [{
                 "end": false,
                 "production_speed": 20,
-                "made_in": "assembler",
+                "made_in": "制造台",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "electromagnetic_turbine",
+                    "name": "电磁涡轮",
                     "amount": 40
                 },{
-                    "name": "magnet",
+                    "name": "磁铁",
                     "amount": 60
                 },{
-                    "name": "energetic_graphite",
+                    "name": "高能石墨",
                     "amount": 20
                 }]
             }]
         },
-        "graviton_lens": {
+        "引力透镜": {
             "recipes": [{
                 "end": false,
                 "production_speed": 10,
-                "made_in": "assembler",
+                "made_in": "制造台",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "diamond",
+                    "name": "金刚石",
                     "amount": 40
                 },{
-                    "name": "strange_matter",
+                    "name": "奇异物质",
                     "amount": 10
                 }]
             }]  
         },
-        "space_warper": {
+        "空间翘曲器": {
             "recipes": [{
                 "end": false,
                 "production_speed": 6,
-                "made_in": "assembler",
+                "made_in": "制造台",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "graviton_lens",
+                    "name": "引力透镜",
                     "amount": 6
                 }]
             },{
                 "end": false,
                 "production_speed": 6,
-                "made_in": "assembler",
+                "made_in": "制造台",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "green_matrix",
+                    "name": "绿矩阵",
                     "amount": 6
                 }]
             }]
         },
-        "plane_filter": {
+        "位面过滤器": {
             "recipes": [{
                 "end": false,
                 "production_speed": 5,
-                "made_in": "assembler",
+                "made_in": "制造台",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "casimir_crystal",
+                    "name": "卡西米尔晶体",
                     "amount": 5
                 },{
-                    "name": "titanium_glass",
+                    "name": "钛化玻璃",
                     "amount": 10
                 }]
             }]
         },
-        "quantum_chip": {
+        "量子芯片": {
             "recipes": [{
                 "end": false,
                 "production_speed": 10,
-                "made_in": "assembler",
+                "made_in": "制造台",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "processor",
+                    "name": "处理器",
                     "amount": 20
                 },{
-                    "name": "titanium_glass",
+                    "name": "钛化玻璃",
                     "amount": 20
                 }]
             }]
         },
-        "logistics_vessel": {
+        "星际物流运输船": {
             "recipes": [{
                 "end": false,
                 "production_speed": 10,
-                "made_in": "assembler",
+                "made_in": "制造台",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "titanium_alloy",
+                    "name": "钛合金",
                     "amount": 100
                 },{
-                    "name": "processor",
+                    "name": "处理器",
                     "amount": 100
                 },{
-                    "name": "reinforced_thruster",
+                    "name": "加力推进器",
                     "amount": 20
                 }]
             }]
         },
-        "blue_matrix": {
+        "蓝矩阵": {
             "recipes": [{
                 "end": false,
                 "production_speed": 20,
-                "made_in": "matrix_lab",
+                "made_in": "矩阵研究站",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "magnetic coil",
+                    "name": "磁线圈",
                     "amount": 20
                 },{
-                    "name": "circuit_board",
+                    "name": "电路板",
                     "amount": 20
                 }]
             }]
         },
-        "red_matrix": {
+        "红矩阵": {
             "recipes": [{
                 "end": false,
                 "production_speed": 10,
-                "made_in": "matrix_lab",
+                "made_in": "矩阵研究站",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "energetic_graphite",
+                    "name": "高能石墨",
                     "amount": 20
                 },{
-                    "name": "hydrogen",
+                    "name": "氢",
                     "amount": 20
                 }]
             }]
         },
-        "yellow_matrix": {
+        "黄矩阵": {
             "recipes": [{
                 "end": false,
                 "production_speed": 7.5,
-                "made_in": "matrix_lab",
+                "made_in": "矩阵研究站",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "diamond",
+                    "name": "金刚石",
                     "amount": 7.5
                 },{
-                    "name": "titanium_crystal",
+                    "name": "钛晶石",
                     "amount": 7.5
                 }]
             }]
         },
-        "purple_matrix": {
+        "紫矩阵": {
             "recipes": [{
                 "end": false,
                 "production_speed": 6,
-                "made_in": "matrix_lab",
+                "made_in": "矩阵研究站",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "processor",
+                    "name": "处理器",
                     "amount": 12
                 },{
-                    "name": "particle_broadband",
+                    "name": "粒子宽带",
                     "amount": 6
                 }]
             }]
         },
-        "green_matrix": {
+        "绿矩阵": {
             "recipes": [{
                 "end": false,
                 "production_speed": 2.5,
-                "made_in": "matrix_lab",
+                "made_in": "矩阵研究站",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "graviton_lens",
+                    "name": "引力透镜",
                     "amount": 2.5
                 },{
-                    "name": "quantum_chip",
+                    "name": "量子芯片",
                     "amount": 2.5
                 }]
             }]
         },
-        "white_matrix": {
+        "白矩阵": {
             "recipes": [{
                 "end": false,
                 "production_speed": 4,
-                "made_in": "matrix_lab",
+                "made_in": "矩阵研究站",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "blue_matrix",
+                    "name": "蓝矩阵",
                     "amount": 4
                 },{
-                    "name": "red_matrix",
+                    "name": "红矩阵",
                     "amount": 4
                 },{
-                    "name": "yellow_matrix",
+                    "name": "黄矩阵",
                     "amount": 4
                 },{
-                    "name": "purple_matrix",
+                    "name": "紫矩阵",
                     "amount": 4
                 },{
-                    "name": "green_matrix",
+                    "name": "绿矩阵",
                     "amount": 4
                 },{
-                    "name": "antimatter",
+                    "name": "反物质",
                     "amount": 4
                 }]
             }]
         },
-        "solar_sail": {
+        "太阳帆": {
             "recipes": [{
                 "end": false,
                 "production_speed": 30,
-                "made_in": "assembler",
+                "made_in": "制造台",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "graphene",
+                    "name": "石墨烯",
                     "amount": 15
                 },{
-                    "name": "photon_combiner",
+                    "name": "光子合并器",
                     "amount": 15
                 }]
             }]
         },
-        "frame_material": {
+        "框架材料": {
             "recipes": [{
                 "end": false,
                 "production_speed": 10,
-                "made_in": "assembler",
+                "made_in": "制造台",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "carbon_nanotube",
+                    "name": "碳纳米管",
                     "amount": 40
                 },{
-                    "name": "titanium_alloy",
+                    "name": "钛合金",
                     "amount": 10
                 },{
-                    "name": "high_purity_silicon",
+                    "name": "高纯硅块",
                     "amount": 10
                 }]
             }]
         },
-        "dyson_sphere_component": {
+        "戴森球组件": {
             "recipes": [{
                 "end": false,
                 "production_speed": 7.5,
-                "made_in": "assembler",
+                "made_in": "制造台",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "frame_material",
+                    "name": "框架材料",
                     "amount": 22.5
                 },{
-                    "name": "solar_sail",
+                    "name": "太阳帆",
                     "amount": 22.5
                 },{
-                    "name": "processor",
+                    "name": "处理器",
                     "amount": 22.5
                 }]
             }]
         },
-        "small_carrier_rocket": {
+        "小型运载火箭": {
             "recipes": [{
                 "end": false,
                 "production_speed": 10,
-                "made_in": "assembler",
+                "made_in": "制造台",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "dyson_sphere_component",
+                    "name": "戴森球组件",
                     "amount": 20
                 },{
-                    "name": "deuteron_fuel_rod",
+                    "name": "氘核燃料棒",
                     "amount": 20
                 },{
-                    "name": "quantum_chip",
+                    "name": "量子芯片",
                     "amount": 20
                 }]
             }]

@@ -42,6 +42,71 @@
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/script.min.js"></script>
+    <script src="node.js"></script>
 </body>
+<script>
 
+var recipeList
+var json = (function () {
+        var json = null;
+        $.ajax({
+            'async': false,
+            'global': false,
+            'url': "data/itemInfo.json",
+            'dataType': "json",
+            'success': function (data) {
+                json = data;
+            }
+        });
+        return json;
+    })(); 
+    recipeList = json.recipes
+console.log(recipeList.magnetic_coil)
+
+function calc(item, amount){
+    var factor = amount / 60
+    var igdList = []
+    var igd = item.recipe
+
+    for(var i=0;i<igd.ingredients.length;i++){
+        igdList.push(igd.ingredients[i].name)
+        igdList.push(factor * igd.ingredients[i].amount)
+    }
+    console.log(igdList)
+}
+
+function makeNode1(item, amount){
+    // End of recursion
+    var parent = new Node(item, amount, recipeList)
+    if(recipeList[item].end){return parent}
+
+    if(!recipeList[item].end){
+        var igd = recipeList[item].recipes[0].ingredients
+        for(var i=0;i<igd.length;i++){
+            var child = makeNode(igd[i].name, igd[i].amount)
+            parent.next(child)
+        }
+        return parent
+    }
+}
+
+function makeNode(item, amount){
+    var parent = new Node(item, amount, recipeList)
+    if(recipeList[item].end){return parent}
+    if(!recipeList[item].end){
+        for(var n=0;n<recipeList[item].nOfRcp;n++){
+            var igd = recipeList[item].recipes[n].ingredients
+            for(var i=0;i<igd.length;i++){
+                var child = makeNode(igd[i].name, igd[i].amount)
+                parent.ingredients[n][i] = child
+            }
+        }   
+        return parent
+    }
+}
+var test = makeNode("sulfuric_acid", 120)
+console.log(test)
+
+
+</script>
 </html>

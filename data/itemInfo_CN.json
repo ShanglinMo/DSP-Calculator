@@ -1,0 +1,1327 @@
+{
+    "recipes": {  
+        "铁矿": {
+            "recipes": [{
+                "end": true,
+                "production_speed": 30,
+                "made_in": "采矿机",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "铁矿脉",
+                    "amount": 1
+                }]
+            }]
+        },
+        "铜矿": {
+            "recipes": [{
+                "end": true,
+                "production_speed": 30,
+                "made_in": "采矿机",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "铜矿脉",
+                    "amount": 1
+                }]
+            }]
+        },
+        "石矿": {
+            "recipes": [{
+                "end": true,
+                "production_speed": 30,
+                "made_in": "采矿机",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "石矿脉",
+                    "amount": 1
+                }]
+            }]
+        },
+        "煤矿": {
+            "recipes": [{
+                "end": true,
+                "production_speed": 30,
+                "made_in": "采矿机",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "煤矿脉",
+                    "amount": 1
+                }]
+            }]
+        },
+        "硅石": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 6,
+                "made_in": "电弧熔炉",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "石矿",
+                    "amount": 60
+                }]
+            },{    
+                "end": true,
+                "production_speed": 30,
+                "made_in": "采矿机",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "硅矿",
+                    "amount": 1
+                }]
+            }]
+        },
+        "钛石": {
+            "recipes": [{
+                "end": true,
+                "production_speed": 30,
+                "made_in": "采矿机",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "钛矿",
+                    "amount": 1
+                }]
+            }]
+        },
+        "水": {
+            "recipes": [{
+                "end": true,
+                "production_speed": 60,
+                "made_in": "抽水站",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "海洋",
+                    "amount": 1
+                }]
+            }]
+        },
+        "原油": {
+            "recipes": [{
+                "end": true,
+                "production_speed": 70,
+                "made_in": "原油萃取站",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "原油涌泉",
+                    "amount": 1
+                }]
+            }]
+        },
+        "氢": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 15,
+                "made_in": "原油精炼厂",
+                "byproduct": [{
+                    "name": "精炼油",
+                    "amount": 30
+                }],
+                "ingredients": [{
+                    "name": "原油",
+                    "amount": 30
+                }]
+            },{
+                "end": false,
+                "production_speed": 30,
+                "made_in": "化工厂",
+                "byproduct": [{
+                    "name": "石墨烯",
+                    "amount": 60
+                }],
+                "ingredients": [{
+                    "name": "可燃冰",
+                    "amount": 60
+                }]
+            },{
+                "end": false,
+                "production_speed": 45,
+                "made_in": "原油精炼厂",
+                "byproduct": [{
+                    "name": "高能石墨",
+                    "amount": 15
+                }],
+                "ingredients": [{
+                    "name": "精炼油",
+                    "amount": 15
+                },{
+                    "name": "氢",
+                    "amount": 30
+                }]
+            },{
+                "end": false,
+                "production_speed": 60,
+                "made_in": "射线接收站",
+                "byproduct": [{
+                    "name": "反物质",
+                    "amount": 60
+                }],
+                "ingredients": [{
+                    "name": "临界光子",
+                    "amount": 60
+                }]
+            },{
+                "end": true,
+                "production_speed": 60,
+                "made_in": "轨道采集器",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "气态行星",
+                    "amount": 1
+                }]
+            }]
+        },
+        "重氢": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 60,
+                "made_in": "微型粒子对撞机",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "氢",
+                    "amount": 600
+                }]
+            },{
+                "end": false,
+                "production_speed": 1,
+                "made_in": "分馏塔",
+                "byproduct": [{
+                    "name": "氢",
+                    "amount": 99
+                }],
+                "ingredients": [{
+                    "name": "氢",
+                    "amount": 100
+                }]
+            },{
+                "end": true,
+                "production_speed": 60,
+                "made_in": "轨道采集器",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "气态行星",
+                    "amount": 1
+                }]
+            }]
+        },
+        "反物质": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 60,
+                "made_in": "微型粒子对撞机",
+                "byproduct": [{
+                    "name": "氢",
+                    "amount": 60
+                }],
+                "ingredients": [{
+                    "name": "临界光子",
+                    "amount": 60
+                }]
+            }]
+        },
+        "金伯利矿石": {
+            "recipes": [{
+                "end": true,
+                "production_speed": 30,
+                "made_in": "采矿机",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "金伯利矿石脉",
+                    "amount": 1
+                }]
+            }]
+        },
+        "铁块": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 60,
+                "made_in": "电弧熔炉",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "铁矿",
+                    "amount": 60
+                }]
+            }]
+        },
+        "铜块": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 60,
+                "made_in": "电弧熔炉",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "铜矿",
+                    "amount": 60
+                }]
+            }]
+        },
+        "石材": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 60,
+                "made_in": "电弧熔炉",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "石矿",
+                    "amount": 60
+                }]
+            }]
+        },
+        "高能石墨": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 30,
+                "made_in": "电弧熔炉",
+                "byproduct": null,
+                "ingredients":[{
+                    "name": "煤矿",
+                    "amount": 60
+                }]
+            },{
+                "end": false,
+                "production_speed": 15,
+                "made_in": "原油精炼厂",
+                "byproduct": [{
+                    "name": "氢",
+                    "amount": 45   
+                }],
+                "ingredients":[{
+                    "name": "精炼油",
+                    "amount": 15
+                },{
+                    "name": "氢",
+                    "amount": 30
+                }]
+            }]
+        },
+        "高纯硅块": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 30,
+                "made_in": "电弧熔炉",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "硅石",
+                    "amount": 60
+                }]
+            }]
+        },
+        "钛块": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 30,
+                "made_in": "电弧熔炉",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "钛石",
+                    "amount": 60
+                }]
+            }]
+        },
+        "硫酸": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 40,
+                "made_in": "化工厂",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "精炼油",
+                    "amount": 60
+                },{
+                    "name": "石矿",
+                    "amount": 80
+                },{
+                    "name": "水",
+                    "amount": 40
+                }]
+            },{
+                "end": true,
+                "production_speed": 60,
+                "made_in": "抽水站",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "硫酸海洋",
+                    "amount": 1
+                }]
+            }]
+        },
+        "精炼油": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 30,
+                "made_in": "原油精炼厂",
+                "byproduct": {
+                    "name": "氢",
+                    "amount": 15
+                },
+                "ingredients": [{
+                    "name": "原油",
+                    "amount": 30
+                }]
+            }]   
+        },
+        "液氢燃料棒": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 20,
+                "made_in": "制造台",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "钛块",
+                    "amount": 20
+                },{
+                    "name": "氢",
+                    "amount": 100
+                }]
+            }]
+        },
+        "氘核燃料棒": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 10,
+                "made_in": "制造台",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "钛合金",
+                    "amount": 20
+                },{
+                    "name": "重氢",
+                    "amount": 100
+                },{
+                    "name": "超级磁场环",
+                    "amount": 10
+                }]
+            }]
+        },
+        "反物质燃料棒": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 6,
+                "made_in": "制造台",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "反物质",
+                    "amount": 60
+                },{
+                    "name": "氢",
+                    "amount": 60
+                },{
+                    "name": "湮灭约束球",
+                    "amount": 6
+                },{
+                    "name": "钛合金",
+                    "amount": 6
+                }]
+            }]
+        },
+        "分形硅石": {
+            "recipes": [{
+                "end": true,
+                "production_speed": 30,
+                "made_in": "采矿机",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "分形硅矿",
+                    "amount": 1
+                }]
+            }]
+        },
+        "磁铁": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 40,
+                "made_in": "电弧熔炉",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "铁矿",
+                    "amount": 40
+                }]
+            }]  
+        },
+        "磁线圈": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 120,
+                "made_in": "制造台",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "磁铁",
+                    "amount": 120
+                },{
+                    "name": "铜块",
+                    "amount": 60
+                }]
+            }]  
+        },
+        "玻璃": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 30,
+                "made_in": "电弧熔炉",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "石矿",
+                    "amount": 60
+                }]
+            }]  
+        },
+        "金刚石": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 30,
+                "made_in": "电弧熔炉",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "高能石墨",
+                    "amount": 30
+                }]
+            },{
+                "end": false,
+                "production_speed": 30,
+                "made_in": "电弧熔炉",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "金伯利矿石",
+                    "amount": 30
+                }]
+            }]
+        },
+        "晶格硅": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 60,
+                "made_in": "电弧熔炉",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "高纯硅块",
+                    "amount": 60
+                }]
+            },{
+                "end": false,
+                "production_speed": 60,
+                "made_in": "电弧熔炉",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "分形硅石",
+                    "amount": 60
+                }]
+            }]
+        },
+        "钛合金": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 20,
+                "made_in": "电弧熔炉",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "钛块",
+                    "amount": 20
+                },{
+                    "name": "钢材",
+                    "amount": 20
+                },{
+                    "name": "硫酸",
+                    "amount": 40
+                }]
+            }]
+        },
+        "可燃冰": {
+            "recipes": [{
+                "end": true,
+                "production_speed": 30,
+                "made_in": "采矿机",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "可燃冰矿",
+                    "amount": 1
+                }]
+            },{
+                "end": true,
+                "production_speed": 60,
+                "made_in": "轨道采集器",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "气态行星",
+                    "amount": 1
+                }]
+            }]
+        },
+        "塑料": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 20,
+                "made_in": "化工厂",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "精炼油",
+                    "amount": 40
+                },{
+                    "name": "高能石墨",
+                    "amount": 20
+                }]
+            }]
+        },
+        "有机晶体": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 10,
+                "made_in": "化工厂",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "塑料",
+                    "amount": 20
+                },{
+                    "name": "精炼油",
+                    "amount": 10
+                },{
+                    "name": "水",
+                    "amount": 10
+                }]
+            },{
+                "end": true,
+                "production_speed": 30,
+                "made_in": "采矿机",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "有机晶体矿",
+                    "amount": 1
+                }]
+            }]
+        },
+        "石墨烯": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 40,
+                "made_in": "化工厂",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "高能石墨",
+                    "amount": 60
+                },{
+                    "name": "硫酸",
+                    "amount": 20
+                }]
+            },{
+                "end": false,
+                "production_speed": 60,
+                "made_in": "化工厂",
+                "byproduct": [{
+                    "name": "氢",
+                    "amount": 30
+                }],
+                "ingredients": [{
+                    "name": "可燃冰",
+                    "amount": 60
+                }]
+            }]
+        },
+        "推进器": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 15,
+                "made_in": "制造台",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "钢材",
+                    "amount": 30
+                },{
+                    "name": "铜块",
+                    "amount": 45
+                }]
+            }]
+        },
+        "光栅石": {
+            "recipes": [{
+                "end": true,
+                "production_speed": 30,
+                "made_in": "采矿机",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "光栅石矿",
+                    "amount": 1
+                }] 
+            }]
+        },
+        "钢材": {
+            "recipes": [{
+                "end": true,
+                "production_speed": 20,
+                "made_in": "电弧熔炉",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "铁块",
+                    "amount": 60
+                }]
+            }]
+        },
+        "电路板": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 120,
+                "made_in": "制造台",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "铁块",
+                    "amount": 120
+                },{
+                    "name": "铜块",
+                    "amount": 60
+                }]
+            }]
+        },
+        "棱镜": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 60,
+                "made_in": "制造台",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "玻璃",
+                    "amount": 90
+                }]
+            }]
+        },
+        "电动机": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 30,
+                "made_in": "制造台",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "铁块",
+                    "amount": 60
+                },{
+                    "name": "齿轮",
+                    "amount": 30
+                },{
+                    "name": "磁线圈",
+                    "amount": 30
+                }]
+            }]
+        },
+        "微晶元件": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 30,
+                "made_in": "制造台",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "高纯硅块",
+                    "amount": 60
+                },{
+                    "name": "铜块",
+                    "amount": 30
+                }]
+            }]
+        },
+        "卡西米尔晶体": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 15,
+                "made_in": "制造台",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "钛晶石",
+                    "amount": 15
+                },{
+                    "name": "石墨烯",
+                    "amount": 30
+                },{
+                    "name": "氢",
+                    "amount": 180
+                }]
+            },{
+                "end": false,
+                "production_speed": 15,
+                "made_in": "制造台",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "光栅石",
+                    "amount": 90
+                },{
+                    "name": "石墨烯",
+                    "amount": 30
+                },{
+                    "name": "氢",
+                    "amount": 180
+                }]
+            }]
+        },
+        "奇异物质": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 7.5,
+                "made_in": "微型粒子对撞机",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "粒子容器",
+                    "amount": 15
+                },{
+                    "name": "铁块",
+                    "amount": 30
+                },{
+                    "name": "重氢",
+                    "amount": 75
+                }]
+            }]
+        },
+        "钛晶石": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 15,
+                "made_in": "制造台",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "有机晶体",
+                    "amount": 15
+                },{
+                    "name": "钛块",
+                    "amount": 45
+                }]
+            }]
+        },
+        "碳纳米管": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 30,
+                "made_in": "化工厂",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "石墨烯",
+                    "amount": 45
+                },{
+                    "name": "钛块",
+                    "amount": 15
+                }]
+            },{
+                "end": false,
+                "production_speed": 30,
+                "made_in": "化工厂",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "刺笋结晶",
+                    "amount": 30
+                }]
+            }]
+        },
+        "加力推进器": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 10,
+                "made_in": "制造台",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "钛合金",
+                    "amount": 50
+                },{
+                    "name": "电磁涡轮",
+                    "amount": 50
+                }]
+            }]
+        },
+        "刺笋结晶": {
+            "recipes": [{
+                "end": true,
+                "production_speed": 30,
+                "made_in": "采矿机",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "刺笋矿脉",
+                    "amount": 1
+                }]
+            }]
+        },
+        "齿轮": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 60,
+                "made_in": "制造台",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "铁块",
+                    "amount": 60
+                }]
+            }]
+        },
+        "电浆激发器": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 30,
+                "made_in": "制造台",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "磁线圈",
+                    "amount": 120
+                },{
+                    "name": "棱镜",
+                    "amount": 60
+                }]
+            }]
+        },
+        "光子合并器": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 20,
+                "made_in": "制造台",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "棱镜",
+                    "amount": 40
+                },{
+                    "name": "电路板",
+                    "amount": 20
+                }]
+            },{
+                "end": false,
+                "production_speed": 20,
+                "made_in": "制造台",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "光栅石",
+                    "amount": 20
+                },{
+                    "name": "电路板",
+                    "amount": 20
+                }]
+            }]
+        },
+        "电磁涡轮": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 30,
+                "made_in": "制造台",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "磁线圈",
+                    "amount": 60
+                },{
+                    "name": "电动机",
+                    "amount": 60
+                }]
+            }]
+        },
+        "处理器": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 20,
+                "made_in": "制造台",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "电路板",
+                    "amount": 40
+                },{
+                    "name": "微晶元件",
+                    "amount": 40
+                }]
+            }]
+        },
+        "湮灭约束球": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 3,
+                "made_in": "制造台",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "粒子容器",
+                    "amount": 3
+                },{
+                    "name": "处理器",
+                    "amount": 3
+                }]
+            }]
+        },
+        "钛化玻璃": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 24,
+                "made_in": "制造台",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "玻璃",
+                    "amount": 24
+                },{
+                    "name": "钛块",
+                    "amount": 24
+                },{
+                    "name": "水",
+                    "amount": 24
+                }]
+            }]
+        },
+        "粒子宽带": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 7.5,
+                "made_in": "制造台",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "碳纳米管",
+                    "amount": 15
+                },{
+                    "name": "晶格硅",
+                    "amount": 15
+                },{
+                    "name": "塑料",
+                    "amount": 7.5
+                }]
+            }]
+        },
+        "物流运输机": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 15,
+                "made_in": "制造台",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "铁块",
+                    "amount": 75
+                },{
+                    "name": "处理器",
+                    "amount": 30
+                },{
+                    "name": "推进器",
+                    "amount": 30
+                }]
+            }]
+        },
+        "单极磁石": {
+            "recipes": [{
+                "end": true,
+                "production_speed": 30,
+                "made_in": "采矿机",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "单极磁矿",
+                    "amount": 1
+                }]
+            }]
+        },
+        "地基": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 60,
+                "made_in": "制造台",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "石材",
+                    "amount": 180
+                },{
+                    "name": "钢材",
+                    "amount": 60
+                }]
+            }]
+        },
+        "临界光子": {
+            "recipes": [{
+                "end": true,
+                "production_speed": 1,
+                "made_in": "射线接收站",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "射线接收站",
+                    "amount": 1
+                }]
+            }]
+        },
+        "粒子容器": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 15,
+                "made_in": "制造台",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "电磁涡轮",
+                    "amount": 30
+                },{
+                    "name": "铜块",
+                    "amount": 30
+                },{
+                    "name": "石墨烯",
+                    "amount": 30
+                }]
+            },{
+                "end": false,
+                "production_speed": 15,
+                "made_in": "制造台",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "单极磁石",
+                    "amount": 150
+                },{
+                    "name": "铜块",
+                    "amount": 30
+                }]
+            }]
+        },
+        "超级磁场环": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 20,
+                "made_in": "制造台",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "电磁涡轮",
+                    "amount": 40
+                },{
+                    "name": "磁铁",
+                    "amount": 60
+                },{
+                    "name": "高能石墨",
+                    "amount": 20
+                }]
+            }]
+        },
+        "引力透镜": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 10,
+                "made_in": "制造台",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "金刚石",
+                    "amount": 40
+                },{
+                    "name": "奇异物质",
+                    "amount": 10
+                }]
+            }]  
+        },
+        "空间翘曲器": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 6,
+                "made_in": "制造台",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "引力透镜",
+                    "amount": 6
+                }]
+            },{
+                "end": false,
+                "production_speed": 6,
+                "made_in": "制造台",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "绿矩阵",
+                    "amount": 6
+                }]
+            }]
+        },
+        "位面过滤器": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 5,
+                "made_in": "制造台",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "卡西米尔晶体",
+                    "amount": 5
+                },{
+                    "name": "钛化玻璃",
+                    "amount": 10
+                }]
+            }]
+        },
+        "量子芯片": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 10,
+                "made_in": "制造台",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "处理器",
+                    "amount": 20
+                },{
+                    "name": "钛化玻璃",
+                    "amount": 20
+                }]
+            }]
+        },
+        "星际物流运输船": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 10,
+                "made_in": "制造台",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "钛合金",
+                    "amount": 100
+                },{
+                    "name": "处理器",
+                    "amount": 100
+                },{
+                    "name": "加力推进器",
+                    "amount": 20
+                }]
+            }]
+        },
+        "蓝矩阵": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 20,
+                "made_in": "矩阵研究站",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "磁线圈",
+                    "amount": 20
+                },{
+                    "name": "电路板",
+                    "amount": 20
+                }]
+            }]
+        },
+        "红矩阵": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 10,
+                "made_in": "矩阵研究站",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "高能石墨",
+                    "amount": 20
+                },{
+                    "name": "氢",
+                    "amount": 20
+                }]
+            }]
+        },
+        "黄矩阵": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 7.5,
+                "made_in": "矩阵研究站",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "金刚石",
+                    "amount": 7.5
+                },{
+                    "name": "钛晶石",
+                    "amount": 7.5
+                }]
+            }]
+        },
+        "紫矩阵": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 6,
+                "made_in": "矩阵研究站",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "处理器",
+                    "amount": 12
+                },{
+                    "name": "粒子宽带",
+                    "amount": 6
+                }]
+            }]
+        },
+        "绿矩阵": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 2.5,
+                "made_in": "矩阵研究站",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "引力透镜",
+                    "amount": 2.5
+                },{
+                    "name": "量子芯片",
+                    "amount": 2.5
+                }]
+            }]
+        },
+        "白矩阵": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 4,
+                "made_in": "矩阵研究站",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "蓝矩阵",
+                    "amount": 4
+                },{
+                    "name": "红矩阵",
+                    "amount": 4
+                },{
+                    "name": "黄矩阵",
+                    "amount": 4
+                },{
+                    "name": "紫矩阵",
+                    "amount": 4
+                },{
+                    "name": "绿矩阵",
+                    "amount": 4
+                },{
+                    "name": "反物质",
+                    "amount": 4
+                }]
+            }]
+        },
+        "太阳帆": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 30,
+                "made_in": "制造台",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "石墨烯",
+                    "amount": 15
+                },{
+                    "name": "光子合并器",
+                    "amount": 15
+                }]
+            }]
+        },
+        "框架材料": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 10,
+                "made_in": "制造台",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "碳纳米管",
+                    "amount": 40
+                },{
+                    "name": "钛合金",
+                    "amount": 10
+                },{
+                    "name": "高纯硅块",
+                    "amount": 10
+                }]
+            }]
+        },
+        "戴森球组件": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 7.5,
+                "made_in": "制造台",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "框架材料",
+                    "amount": 22.5
+                },{
+                    "name": "太阳帆",
+                    "amount": 22.5
+                },{
+                    "name": "处理器",
+                    "amount": 22.5
+                }]
+            }]
+        },
+        "小型运载火箭": {
+            "recipes": [{
+                "end": false,
+                "production_speed": 10,
+                "made_in": "制造台",
+                "byproduct": null,
+                "ingredients": [{
+                    "name": "戴森球组件",
+                    "amount": 20
+                },{
+                    "name": "氘核燃料棒",
+                    "amount": 20
+                },{
+                    "name": "量子芯片",
+                    "amount": 20
+                }]
+            }]
+        }
+    }
+}

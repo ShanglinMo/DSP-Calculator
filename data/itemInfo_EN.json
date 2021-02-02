@@ -1,5 +1,5 @@
 {
-    "recipes": {  
+    "recipe": {  
         "iron_ore": {
             "recipes": [{
                 "end": true,
@@ -1323,5 +1323,8 @@
                 }]
             }]
         }
+    },
+    "factory": {
+
     }
 }

@@ -141,11 +141,13 @@ function calculate() {
     /* insert row */
     function insertRow(node) {
         cell1 = node.item
+        if (!node.item.includes("vein")) { node.amount = Math.round(node.amount); }
         cell2 = node.amount
         var table = document.getElementById("resultTable").tBodies[0]
         var row = table.rows[0].cloneNode(true)
-        row.cells[0].innerHTML = cell1
-        row.cells[1].innerHTML = cell2
+        row.cells[0].innerHTML = "<img style='width:3rem' src='icon/" + node.item + ".png'/>"
+        row.cells[1].innerHTML = cell1
+        row.cells[2].innerHTML = cell2
         table.appendChild(row);
     }
 

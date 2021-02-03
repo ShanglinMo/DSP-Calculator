@@ -84,7 +84,7 @@
         "water": {
             "recipes": [{
                 "end": true,
-                "production_speed": 60,
+                "production_speed": 50,
                 "made_in": "water_pump",
                 "byproduct": null,
                 "ingredients": [{
@@ -333,7 +333,7 @@
                 }]
             },{
                 "end": true,
-                "production_speed": 60,
+                "production_speed": 50,
                 "made_in": "water_pump",
                 "byproduct": null,
                 "ingredients": [{
@@ -1324,7 +1324,9 @@
             }]
         }
     },
-    "factory": {
-
+    "buiding": {
+        "mining_machine": {
+            "production_speed": 180
+        }
     }
 }

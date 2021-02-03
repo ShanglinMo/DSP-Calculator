@@ -1,3 +1,4 @@
+
 {
     "iron_ore": "铁矿",
     "copper_ore": "铜矿",
@@ -78,12 +79,18 @@
     "iron_vein": "铁矿脉",
     "copper_vein": "铜矿脉",
     "stone_vein": "石矿脉",
-    "silicon_vein": "硅矿脉",
-    "titanium_vein": "钛矿脉",
+    "coal_vein": "煤矿脉",
+    "silicon_vein": "硅矿",
+    "titanium_vein": "钛矿",
+    "ocean": "海洋",
+    "crude_oil_seep": "原油涌泉",
+    "gas_giant_orbit": "气态行星",
     "kimberlite_vein": "金伯利矿脉",
-    "fractal_silicon_vein": "分型硅矿脉",
-    "fire_ice_vein": "可燃冰矿脉",
-    "organic_crystal_vein": "有机晶体矿脉",
-    "optical_grating_crystal_vein": "光栅石矿脉",
-    "unipolar_magnet_vein": "单极磁石矿脉"
+    "sulfuric_acid_ocean": "硫酸海洋",
+    "fractal_silicon_vein": "分形硅矿",
+    "fire_ice_vein": "可燃冰矿",
+    "organic_crystal_vein": "有机晶体矿",
+    "optical_grating_crystal_vein": "光栅石矿",
+    "spiniform_stalagmite_crystal_vein": "刺笋矿脉",
+    "unipolar_magnet_vein": "单极磁矿"
 }

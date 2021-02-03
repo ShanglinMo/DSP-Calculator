@@ -3,6 +3,7 @@ class Node{
         this.item = item
         this.amount = amount
         this.ingredients = []
+        this.factory
         if(json[item] == undefined){
             this.ingredients = null
         } 

@@ -231,7 +231,7 @@ function calculate() {
         const out_merged = []
 
         var i
-        for (i = 0; i < out.length; i++) { 
+        for (i = out.length - 1; i >= 0; i--) { 
             var found = 0  
             var j
             for (j = 0; j < out_merged.length; j++) { 
@@ -245,6 +245,7 @@ function calculate() {
                 out_merged.push(out[i]) // add
             }
         }
+        out_merged.reverse()
         out_merged.forEach(child => insertRow(child));
     }
 }

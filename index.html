@@ -108,12 +108,15 @@ function loadTrans(){
 function makeChain(item, amount){
     var parent = new Node(item, amount, recipeList)
     for(var n=0;n<recipeList[item].recipes.length;n++){
-            var factor = Math.round(amount / recipeList[item].recipes[n].production_speed)
+
+            var factor = amount / recipeList[item].recipes[n].production_speed
+
             parent.factory = [recipeList[item].recipes[n].made_in, factor]
             var igd = recipeList[item].recipes[n].ingredients
             if(recipeList[item].recipes[n].end){
                 for(var i=0;i<igd.length;i++){
-                    parent.ingredients[n][i] = new Node(igd[i].name, igd[i].amount, recipeList)
+                    parent.ingredients[n][i] = new Node(igd[i].name, igd[i].amount*factor, recipeList)
+                    parent.ingredients[n][i].amount = Math.ceil(parent.ingredients[n][i].amount)
                 }
             } else {
                 for(var i=0;i<igd.length;i++){

@@ -47,6 +47,7 @@
                                     <td style="color: #90F5FB;border-color: #90F5FB;">图标</td>
                                     <td style="color: #90F5FB;border-color: #90F5FB;">需要物品</td>
                                     <td style="color: #90F5FB;border-color: #90F5FB;">需要数量</td>
+                                    <td style="color: #90F5FB;border-color: #90F5FB;">生产建筑</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -83,6 +84,23 @@ function loadRecipes(){
     return json.recipe
 }
 
+function loadTrans(){
+    var json = (function () {
+        var json = null;
+        $.ajax({
+            'async': false,
+            'global': false,
+            'url': "data/trans.json",
+            'dataType': "json",
+            'success': function (data) {
+                json = data;
+            }
+        });
+        return json;
+    })(); 
+    return json
+}
+
 function makeChain(item, amount){
     var parent = new Node(item, amount, recipeList)
     for(var n=0;n<recipeList[item].recipes.length;n++){
@@ -104,6 +122,7 @@ function makeChain(item, amount){
 
 /* recipe -> item -> recipes */
 recipeList = loadRecipes()
+trans = loadTrans()
 document.getElementById("productRate").disabled = true;
 addTargetItems()
 
@@ -114,7 +133,8 @@ function addTargetItems() {
     var i
     for (i = 0; i < names.length; i++) {
         var option = document.createElement("option")
-        option.text = names[i]
+        option.text = trans[names[i]]
+        option.value = names[i]
         select.add(option)
     }
 }
@@ -130,24 +150,23 @@ function calculate() {
     }
     /* get target item */ 
     var select = document.getElementById("targetItems")
-    var targetItem = select.options[select.selectedIndex].text
+    var targetItem = select.options[select.selectedIndex].value
     /* get target quantity */ 
     var targetQuantity = document.getElementById("targetQuantity").value;
     /* make chain */ 
     supplyChain = makeChain(targetItem, targetQuantity)
-    console.log(supplyChain)
     bfs_sum(supplyChain.ingredients)
 
     /* insert row */
     function insertRow(node) {
-        cell1 = node.item
+        cell1 = trans[node.item]
         if (!node.item.includes("vein")) { node.amount = Math.round(node.amount); }
-        cell2 = node.amount
         var table = document.getElementById("resultTable").tBodies[0]
         var row = table.rows[0].cloneNode(true)
-        row.cells[0].innerHTML = "<img style='width:3rem' src='icon/" + node.item + ".png'/>"
+        row.cells[0].innerHTML = "<img style='max-width:3rem;max-height:3rem;' src='icon/" + node.item + ".png'/>"
         row.cells[1].innerHTML = cell1
-        row.cells[2].innerHTML = cell2
+        row.cells[2].innerHTML = node.amount
+        row.cells[3].innerHTML = node.made_in
         table.appendChild(row);
     }
 

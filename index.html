@@ -28,11 +28,15 @@
             <div class="row">
                 <div class="col-md-4" style="margin-bottom: 8px;"><select id="targetItems" style="width: 100%;color: #A9F7FD;font-family: Inter, sans-serif;font-weight: normal;border-color: #A9F7FD;border-radius: 4px;background: rgba(169,247,253,0.18);height: 36px;font-size: 14px;min-width: 100%;max-width: 100%;" autofocus="">
                         <option value="undefined">选择一件物品</option>
-                    </select></div>
-                <div class="col-md-4" style="margin-bottom: 8px;"><input type="number" id="targetQuantity" style="width: 100%;background: rgba(169,247,253,0.18);border: 1px solid #A9F7FD;border-radius: 4px;height: 36px;color: #A9F7FD;font-size: 14px;font-weight: normal;font-family: Inter, sans-serif;" placeholder="数量"></div>
+                    </select>
+                </div>
+                <div class="col-md-4" style="margin-bottom: 8px;">
+                    <input type="number" id="targetQuantity" style="width: 100%;background: rgba(169,247,253,0.18);border: 1px solid #A9F7FD;border-radius: 4px;height: 36px;color: #A9F7FD;font-size: 14px;font-weight: normal;font-family: Inter, sans-serif;" placeholder="数量">
+                </div>
                 <div class="col-md-4"><select id="productRate" style="width: 100%;color: #A9F7FD;font-family: Inter, sans-serif;font-weight: normal;border-color: #A9F7FD;border-radius: 4px;background: rgba(169,247,253,0.18);height: 36px;font-size: 14px;min-width: 100%;max-width: 100%;">
-                        <option value="" selected="">每分钟</option>
-                    </select></div>
+                        <option value="/m" selected="">每分钟</option>
+                    </select>
+                </div>
             </div>
             <div class="row">
                 <div class="col-md-12" style="text-align: center;margin: 0px;margin-right: 0px;margin-left: 0px;margin-top: 24px;margin-bottom: 0px;">
@@ -46,7 +50,7 @@
                                 <tr >
                                     <td style="color: #90F5FB;border-color: #90F5FB;">图标</td>
                                     <td style="color: #90F5FB;border-color: #90F5FB;">需要物品</td>
-                                    <td style="color: #90F5FB;border-color: #90F5FB;">需要数量</td>
+                                    <td style="color: #90F5FB;border-color: #90F5FB;">需要产量</td>
                                     <td style="color: #90F5FB;border-color: #90F5FB;">生产建筑</td>
                                 </tr>
                             </tbody>
@@ -123,7 +127,6 @@ function makeChain(item, amount){
 /* recipe -> item -> recipes */
 recipeList = loadRecipes()
 trans = loadTrans()
-document.getElementById("productRate").disabled = true;
 addTargetItems()
 
 /* add items to <select> */
@@ -165,7 +168,7 @@ function calculate() {
         var row = table.rows[0].cloneNode(true)
         row.cells[0].innerHTML = "<img style='max-width:3rem;max-height:3rem;' src='icon/" + node.item + ".png'/>"
         row.cells[1].innerHTML = cell1
-        row.cells[2].innerHTML = node.amount
+        row.cells[2].innerHTML = node.amount // + " " + document.getElementById("productRate").value
         row.cells[3].innerHTML = node.made_in
         table.appendChild(row);
     }
@@ -230,8 +233,7 @@ function calculate() {
             var found = 0  
             var j
             for (j = 0; j < out_merged.length; j++) { 
-                console.log(out_merged[j])
-                if (out[i].item === out_merged[j].item && out_merged[j].item != undefined) {
+                if (out[i].item === out_merged[j].item) {
                     out_merged[j].amount += out[i].amount // merge
                     found = 1
                     break

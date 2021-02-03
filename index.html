@@ -44,6 +44,7 @@
                         <table id="resultTable" class="table" style="margin-bottom: 0px">
                             <tbody>
                                 <tr >
+                                    <td style="color: #90F5FB;border-color: #90F5FB;">图标</td>
                                     <td style="color: #90F5FB;border-color: #90F5FB;">需要物品</td>
                                     <td style="color: #90F5FB;border-color: #90F5FB;">需要数量</td>
                                 </tr>
@@ -81,6 +82,7 @@ function loadRecipes(){
     })(); 
     return json.recipe
 }
+
 function makeChain(item, amount){
     var parent = new Node(item, amount, recipeList)
     for(var n=0;n<recipeList[item].recipes.length;n++){
@@ -119,6 +121,13 @@ function addTargetItems() {
 
 /* calculate */ 
 function calculate() {
+    /* clean table */
+    var theTable = document.getElementById("resultTable");
+    var rowsToDelete = theTable.rows.length
+    var x
+    for(x = 1; x < rowsToDelete; x++) {
+        theTable.deleteRow(1)
+    }
     /* get target item */ 
     var select = document.getElementById("targetItems")
     var targetItem = select.options[select.selectedIndex].text

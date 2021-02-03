@@ -40,18 +40,34 @@
             </div>
             <div class="row">
                 <div class="col-md-12" style="text-align: center;margin: 0px;margin-right: 0px;margin-left: 0px;margin-top: 24px;margin-bottom: 0px;">
-                    <button onClick=calculate() class="btn btn-primary" type="button" style="color: #A9F7FD;font-size: 14px;border-radius: 4px;border-style: solid;border-color: #A9F7FD;background: rgba(169,247,253,0.18);height: 42px;text-align: center;width: 100px;">计算</button></div>
+                    <button onClick=calculate() class="btn btn-primary" type="button" style="margin-right: 2px; margin-left: 2px; margin-bottom: 8px; color: #1C2031;font-size: 14px;border-radius: 4px;border-style: solid;border-color: #A9F7FD;background: #A9F7FD;height: 42px;text-align: center;width: 100px;">计算</button>
+                    <button data-toggle="collapse" data-target="#recipe-settings" class="btn btn-primary" type="button" style="margin-left: 2px; margin-bottom: 8px; color: #A9F7FD;font-size: 14px;border-radius: 4px;border-style: solid;border-color: #A9F7FD;background: rgba(169,247,253,0.18);height: 42px;text-align: center;width: 100px;">设置</button>
+                </div>
             </div>
             <div class="row">
-                <div class="col">
-                    <div class="table-responsive" style="margin-top: 48px;color: #90F5FB;border-radius: 4px;border: 1px solid #90F5FB ;">
+                <div class="col-md-12">
+                    <div class="table-responsive collapse" id="recipe-settings" style="margin-top: 8px;color: #90F5FB;border-radius: 4px;">
+                        <table id="" class="table" style="margin-bottom: 0px">
+                            <tbody>
+                                <tr>
+                                    <td> 正在加班做 </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="table-responsive" style="margin-top: 48px;color: #90F5FB;border-radius: 4px;">
                         <table id="resultTable" class="table" style="margin-bottom: 0px">
                             <tbody>
-                                <tr >
-                                    <td style="color: #90F5FB;border-color: #90F5FB;">图标</td>
-                                    <td style="color: #90F5FB;border-color: #90F5FB;">需要物品</td>
-                                    <td style="color: #90F5FB;border-color: #90F5FB;">需要产量</td>
-                                    <td style="color: #90F5FB;border-color: #90F5FB;">生产建筑</td>
+                                <tr>
+                                    <td>图标</td>
+                                    <td>需要物品</td>
+                                    <td>需要产量</td>
+                                    <td>需要生产建筑</td>
+                                    <td>需要生产建筑数量</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -174,7 +190,8 @@ function calculate() {
         row.cells[0].innerHTML = "<img style='max-width:3rem;max-height:3rem;' src='icon/" + node.item + ".png'/>"
         row.cells[1].innerHTML = cell1
         row.cells[2].innerHTML = node.amount // + " " + document.getElementById("productRate").value
-        row.cells[3].innerHTML = node.made_in
+        row.cells[3].innerHTML = "<img style='max-width:3rem;max-height:3rem;' src='icon/" + node.factory[0] + ".png'/>"
+        row.cells[4].innerHTML = node.factory[1]
         table.appendChild(row);
     }
 

@@ -3,7 +3,7 @@
         "iron_ore": {
             "recipes": [{
                 "end": true,
-                "production_speed": 30,
+                "production_speed": 240,
                 "made_in": "mining_machine",
                 "byproduct": null,
                 "ingredients": [{
@@ -15,7 +15,7 @@
         "copper_ore": {
             "recipes": [{
                 "end": true,
-                "production_speed": 30,
+                "production_speed": 240,
                 "made_in": "mining_machine",
                 "byproduct": null,
                 "ingredients": [{
@@ -27,7 +27,7 @@
         "stone_ore": {
             "recipes": [{
                 "end": true,
-                "production_speed": 30,
+                "production_speed": 240,
                 "made_in": "mining_machine",
                 "byproduct": null,
                 "ingredients": [{
@@ -39,7 +39,7 @@
         "coal_ore": {
             "recipes": [{
                 "end": true,
-                "production_speed": 30,
+                "production_speed": 240,
                 "made_in": "mining_machine",
                 "byproduct": null,
                 "ingredients": [{
@@ -60,7 +60,7 @@
                 }]
             },{    
                 "end": true,
-                "production_speed": 30,
+                "production_speed": 240,
                 "made_in": "mining_machine",
                 "byproduct": null,
                 "ingredients": [{
@@ -72,7 +72,7 @@
         "titanium_ore": {
             "recipes": [{
                 "end": true,
-                "production_speed": 30,
+                "production_speed": 240,
                 "made_in": "mining_machine",
                 "byproduct": null,
                 "ingredients": [{
@@ -219,7 +219,7 @@
         "kimberlite_ore": {
             "recipes": [{
                 "end": true,
-                "production_speed": 30,
+                "production_speed": 240,
                 "made_in": "mining_machine",
                 "byproduct": null,
                 "ingredients": [{
@@ -414,7 +414,7 @@
         "fractal_silicon": {
             "recipes": [{
                 "end": true,
-                "production_speed": 30,
+                "production_speed": 240,
                 "made_in": "mining_machine",
                 "byproduct": null,
                 "ingredients": [{
@@ -525,7 +525,7 @@
         "fire_ice": {
             "recipes": [{
                 "end": true,
-                "production_speed": 30,
+                "production_speed": 240,
                 "made_in": "mining_machine",
                 "byproduct": null,
                 "ingredients": [{
@@ -576,7 +576,7 @@
                 }]
             },{
                 "end": true,
-                "production_speed": 30,
+                "production_speed": 240,
                 "made_in": "mining_machine",
                 "byproduct": null,
                 "ingredients": [{
@@ -630,7 +630,7 @@
         "optical_grating_crystal": {
             "recipes": [{
                 "end": true,
-                "production_speed": 30,
+                "production_speed": 240,
                 "made_in": "mining_machine",
                 "byproduct": null,
                 "ingredients": [{
@@ -819,7 +819,7 @@
         "spiniform_stalagmite_crystal": {
             "recipes": [{
                 "end": true,
-                "production_speed": 30,
+                "production_speed": 240,
                 "made_in": "mining_machine",
                 "byproduct": null,
                 "ingredients": [{
@@ -984,7 +984,7 @@
         "unipolar_magnet": {
             "recipes": [{
                 "end": true,
-                "production_speed": 30,
+                "production_speed": 240,
                 "made_in": "mining_machine",
                 "byproduct": null,
                 "ingredients": [{

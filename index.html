@@ -124,9 +124,8 @@ function loadTrans(){
 function makeChain(item, amount){
     var parent = new Node(item, amount, recipeList)
     for(var n=0;n<recipeList[item].recipes.length;n++){
-
             var factor = amount / recipeList[item].recipes[n].production_speed
-            parent.factory = [recipeList[item].recipes[n].made_in, Math.round(factor)]
+            parent.factory = [recipeList[item].recipes[n].made_in, Math.ceil(factor)]
             var igd = recipeList[item].recipes[n].ingredients
             if(recipeList[item].recipes[n].end){
                 for(var i=0;i<igd.length;i++){

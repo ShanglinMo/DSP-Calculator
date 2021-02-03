@@ -223,7 +223,7 @@
                 "made_in": "采矿机",
                 "byproduct": null,
                 "ingredients": [{
-                    "name": "金伯利矿石脉",
+                    "name": "金伯利矿脉",
                     "amount": 1
                 }]
             }]

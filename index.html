@@ -44,6 +44,7 @@
                         <table id="resultTable" class="table" style="margin-bottom: 0px">
                             <tbody>
                                 <tr >
+                                    <td style="color: #90F5FB;border-color: #90F5FB;">图标</td>
                                     <td style="color: #90F5FB;border-color: #90F5FB;">需要物品</td>
                                     <td style="color: #90F5FB;border-color: #90F5FB;">需要数量</td>
                                 </tr>
@@ -81,6 +82,7 @@ function loadRecipes(){
     })(); 
     return json.recipe
 }
+
 function makeChain(item, amount){
     var parent = new Node(item, amount, recipeList)
     for(var n=0;n<recipeList[item].recipes.length;n++){
@@ -119,6 +121,13 @@ function addTargetItems() {
 
 /* calculate */ 
 function calculate() {
+    /* clean table */
+    var theTable = document.getElementById("resultTable");
+    var rowsToDelete = theTable.rows.length
+    var x
+    for(x = 1; x < rowsToDelete; x++) {
+        theTable.deleteRow(1)
+    }
     /* get target item */ 
     var select = document.getElementById("targetItems")
     var targetItem = select.options[select.selectedIndex].text
@@ -127,21 +136,23 @@ function calculate() {
     /* make chain */ 
     supplyChain = makeChain(targetItem, targetQuantity)
     console.log(supplyChain)
-    bfs(supplyChain.ingredients)
+    bfs_sum(supplyChain.ingredients)
 
     /* insert row */
     function insertRow(node) {
         cell1 = node.item
+        if (!node.item.includes("vein")) { node.amount = Math.round(node.amount); }
         cell2 = node.amount
         var table = document.getElementById("resultTable").tBodies[0]
         var row = table.rows[0].cloneNode(true)
-        row.cells[0].innerHTML = cell1
-        row.cells[1].innerHTML = cell2
+        row.cells[0].innerHTML = "<img style='width:3rem' src='icon/" + node.item + ".png'/>"
+        row.cells[1].innerHTML = cell1
+        row.cells[2].innerHTML = cell2
         table.appendChild(row);
     }
 
     /* bfs to add all ingredients */
-    function bfs(ingredients) {
+    function bfs_separate(ingredients) {
         // if there is nothing, return false
         if (ingredients == null) {
             return false
@@ -165,8 +176,55 @@ function calculate() {
             queue.shift();
         }
     }
-}
 
+    /* bfs to add all ingredients, and auto sum the amount */
+    function bfs_sum(ingredients) {
+        // if there is nothing, return false
+        if (ingredients == null) {
+            return false
+        }
+        // queue and out
+        const queue = [];
+        const out = [];
+        // add root to queue
+        ingredients[0].forEach(child => queue.push(child));
+        // while queue is not empty
+        while (queue.length !== 0) {
+            if (queue[0].ingredients != null) {
+                // get TreeNode Children
+                const nodeChildren = queue[0].ingredients[0];
+                // if node has children, loop and add each to queue
+                if (nodeChildren.length !== 0) {
+                    nodeChildren.forEach(child => queue.push(child));
+                }
+            }
+            // extract the node
+            out.push(queue[0])
+            // remove first node from queue
+            queue.shift();
+        }
+        // merge forward
+        const out_merged = []
+
+        var i
+        for (i = 0; i < out.length; i++) { 
+            var found = 0  
+            var j
+            for (j = 0; j < out_merged.length; j++) { 
+                console.log(out_merged[j])
+                if (out[i].item === out_merged[j].item && out_merged[j].item != undefined) {
+                    out_merged[j].amount += out[i].amount // merge
+                    found = 1
+                    break
+                }
+            }
+            if (found == 0) {
+                out_merged.push(out[i]) // add
+            }
+        }
+        out_merged.forEach(child => insertRow(child));
+    }
+}
 
 </script>
 </html>

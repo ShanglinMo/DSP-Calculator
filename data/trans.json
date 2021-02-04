@@ -420,7 +420,7 @@
     },
     "quantities_required_cell": {
         "cn": "需要产量",
-        "en": "# of Needed"
+        "en": "Quantity Needed"
     },
     "buildings_required_cell": {
         "cn": "需要生产建筑",
@@ -428,7 +428,7 @@
     },
     "buildings_quantity_required_cell": {
         "cn": "需要生产建筑数量",
-        "en": "# of Needed"
+        "en": "Quantity Needed"
     },
     "raw_required_cell": {
         "cn": "需要原始资源",

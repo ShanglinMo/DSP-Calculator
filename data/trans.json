@@ -1,97 +1,445 @@
-
 {
-    "iron_ore": "铁矿",
-    "copper_ore": "铜矿",
-    "stone_ore": "石矿",
-    "coal_ore": "煤矿",
-    "silicon_ore": "硅石",
-    "titanium_ore": "钛石",
-    "water": "水",
-    "crude_oil": "原油",
-    "hydrogen": "氢",
-    "deuterium": "重氢",
-    "antimatter": "反物质",
-    "kimberlite_ore": "金伯利矿石",
-    "iron_ingot": "铁块",
-    "copper_ingot": "铜块",
-    "stone": "石材",
-    "energetic_graphite": "高能石墨",
-    "high_purity_silicon": "高纯硅块",
-    "titanium_ingot": "钛块",
-    "sulfuric_acid": "硫酸",
-    "refined_oil": "精炼油",
-    "hydrogen_fuel_rod": "液氢燃料棒",
-    "deuteron_fuel_rod": "氘核燃料棒",
-    "antimatter_fuel_rod": "反物质燃料棒",
-    "fractal_silicon": "分形硅石",
-    "magnet": "磁铁",
-    "magnetic_coil": "磁线圈",
-    "glass": "玻璃",
-    "diamond": "金刚石",
-    "crystal_silicon": "晶格硅",
-    "titanium_alloy": "钛合金",
-    "fire_ice": "可燃冰",
-    "plastic": "塑料",
-    "organic_crystal": "有机晶体",
-    "graphene": "石墨烯",
-    "thruster": "推进器",
-    "optical_grating_crystal": "光栅石",
-    "steel": "钢材",
-    "circuit_board": "电路板",
-    "prism": "棱镜",
-    "electric_motor": "电动机",
-    "microcrystalline_component": "微晶元件",
-    "casimir_crystal": "卡西米尔晶体",
-    "strange_matter": "奇异物质",
-    "titanium_crystal": "钛晶石",
-    "carbon_nanotube": "碳纳米管",
-    "reinforced_thruster": "加力推进器",
-    "spiniform_stalagmite_crystal": "刺笋结晶",
-    "gear": "齿轮",
-    "plasma_exciter": "电浆激发器",
-    "photon_combiner": "光子合并器",
-    "electromagnetic_turbine": "电磁涡轮",
-    "processor": "处理器",
-    "annihilation_constraint_sphere": "湮灭约束球",
-    "titanium_glass": "钛化玻璃",
-    "particle_broadband": "粒子宽带",
-    "logistics_drone": "物流运输机",
-    "unipolar_magnet": "单极磁石",
-    "foundation": "地基",
-    "critical_photon": "临界光子",
-    "particle_container": "粒子容器",
-    "super_magnetic_ring": "超级磁场环",
-    "graviton_lens": "引力透镜",
-    "space_warper": "空间翘曲器",
-    "plane_filter": "位面过滤器",
-    "quantum_chip": "量子芯片",
-    "logistics_vessel": "星际物流运输船",
-    "blue_matrix": "蓝矩阵",
-    "red_matrix": "红矩阵",
-    "yellow_matrix": "黄矩阵",
-    "purple_matrix": "紫矩阵",
-    "green_matrix": "绿矩阵",
-    "white_matrix": "白矩阵",
-    "solar_sail": "太阳帆",
-    "frame_material": "框架材料",
-    "dyson_sphere_component": "戴森球组件",
-    "small_carrier_rocket": "小型运载火箭",
-    "iron_vein": "铁矿脉",
-    "copper_vein": "铜矿脉",
-    "stone_vein": "石矿脉",
-    "coal_vein": "煤矿脉",
-    "silicon_vein": "硅矿",
-    "titanium_vein": "钛矿",
-    "ocean": "海洋",
-    "crude_oil_seep": "原油涌泉",
-    "gas_giant_orbit": "气态行星",
-    "kimberlite_vein": "金伯利矿脉",
-    "sulfuric_acid_ocean": "硫酸海洋",
-    "fractal_silicon_vein": "分形硅矿",
-    "fire_ice_vein": "可燃冰矿",
-    "organic_crystal_vein": "有机晶体矿",
-    "optical_grating_crystal_vein": "光栅石矿",
-    "spiniform_stalagmite_crystal_vein": "刺笋矿脉",
-    "unipolar_magnet_vein": "单极磁矿",
-    "ray_receiver": "射线接收站"
+    "iron_ore": {
+        "cn": "铁矿",
+        "en": "Iron Ore"
+    },
+    "copper_ore": {
+        "cn": "铜矿",
+        "en": "Copper Ore"
+    },
+    "stone_ore": {
+        "cn": "石矿",
+        "en": "Stone Ore"
+    },
+    "coal_ore": {
+        "cn": "煤矿",
+        "en": "Coal Ore"
+    },
+    "silicon_ore": {
+        "cn": "硅石",
+        "en": "Silicon Ore"
+    },
+    "titanium_ore": {
+        "cn": "钛石",
+        "en": "Titanium Ore"
+    },
+    "water": {
+        "cn": "水",
+        "en": "Water"
+    },
+    "crude_oil": {
+        "cn": "原油",
+        "en": "Crude Oil"
+    },
+    "hydrogen": {
+        "cn": "氢",
+        "en": "Hydrogen"
+    },
+    "deuterium": {
+        "cn": "重氢",
+        "en": "Deuterium"
+    },
+    "antimatter": {
+        "cn": "反物质",
+        "en": "Antimatter"
+    },
+    "kimberlite_ore": {
+        "cn": "金伯利矿石",
+        "en": "Kimberlite Ore"
+    },
+    "iron_ingot": {
+        "cn": "铁块",
+        "en": "Iron Ingot"
+    },
+    "copper_ingot": {
+        "cn": "铜块",
+        "en": "Copper Ingot"
+    },
+    "stone": {
+        "cn": "石材",
+        "en": "Stone"
+    },
+    "energetic_graphite": {
+        "cn": "高能石墨",
+        "en": "Energetic Graphite"
+    },
+    "high_purity_silicon": {
+        "cn": "高纯硅块",
+        "en": "High Purity Silicon"
+    },
+    "titanium_ingot": {
+        "cn": "钛块",
+        "en": "Titanium Ingot"
+    },
+    "sulfuric_acid": {
+        "cn": "硫酸",
+        "en": "Sulfuric Acid"
+    },
+    "refined_oil": {
+        "cn": "精炼油",
+        "en": "Refined Oil"
+    },
+    "hydrogen_fuel_rod": {
+        "cn": "液氢燃料棒",
+        "en": "Hydrogen Fuel Rod"
+    },
+    "deuteron_fuel_rod": {
+        "cn": "氘核燃料棒",
+        "en": "Deuteron Fuel Rod"
+    },
+    "antimatter_fuel_rod": {
+        "cn": "反物质燃料棒",
+        "en": "Antimatter Fuel Rod"
+    },
+    "fractal_silicon": {
+        "cn": "分形硅石",
+        "en": "Fractal Silicon"
+    },
+    "magnet": {
+        "cn": "磁铁",
+        "en": "Magnet"
+    },
+    "magnetic_coil": {
+        "cn": "磁线圈",
+        "en": "Magnetic Coil"
+    },
+    "glass": {
+        "cn": "玻璃",
+        "en": "Glass"
+    },
+    "diamond": {
+        "cn": "金刚石",
+        "en": "Diamond"
+    },
+    "crystal_silicon": {
+        "cn": "晶格硅",
+        "en": "Crystal Silicon"
+    },
+    "titanium_alloy": {
+        "cn": "钛合金",
+        "en": "Titanium Alloy"
+    },
+    "fire_ice": {
+        "cn": "可燃冰",
+        "en": "Fire Ice"
+    },
+    "plastic": {
+        "cn": "塑料",
+        "en": "Plastic"
+    },
+    "organic_crystal": {
+        "cn": "有机晶体",
+        "en": "Organic Crystal"
+    },
+    "graphene": {
+        "cn": "石墨烯",
+        "en": "Graphene"
+    },
+    "thruster": {
+        "cn": "推进器",
+        "en": "Thruster"
+    },
+    "optical_grating_crystal": {
+        "cn": "光栅石",
+        "en": "Optical Grating Crystal"
+    },
+    "steel": {
+        "cn": "钢材",
+        "en": "Steel"
+    },
+    "circuit_board": {
+        "cn": "电路板",
+        "en": "Circuit Board"
+    },
+    "prism": {
+        "cn": "棱镜",
+        "en": "Prism"
+    },
+    "electric_motor": {
+        "cn": "电动机",
+        "en": "Electric Motor"
+    },
+    "microcrystalline_component": {
+        "cn": "微晶元件",
+        "en": "Microcrystalline Component"
+    },
+    "casimir_crystal": {
+        "cn": "卡西米尔晶体",
+        "en": "Casimir Crystal"
+    },
+    "strange_matter": {
+        "cn": "奇异物质",
+        "en": "Strange Matter"
+    },
+    "titanium_crystal": {
+        "cn": "钛晶石",
+        "en": "Titanium Crystal"
+    },
+    "carbon_nanotube": {
+        "cn": "碳纳米管",
+        "en": "Carbon Nanotube"
+    },
+    "reinforced_thruster": {
+        "cn": "加力推进器",
+        "en": "Reinforced Thruster"
+    },
+    "spiniform_stalagmite_crystal": {
+        "cn": "刺笋结晶",
+        "en": "Spiniform Stalagmite Crystal"
+    },
+    "gear": {
+        "cn": "齿轮",
+        "en": "Gear"
+    },
+    "plasma_exciter": {
+        "cn": "电浆激发器",
+        "en": "Plasma Exciter"
+    },
+    "photon_combiner": {
+        "cn": "光子合并器",
+        "en": "Photon Combiner"
+    },
+    "electromagnetic_turbine": {
+        "cn": "电磁涡轮",
+        "en": "Electromagnetic Turbine"
+    },
+    "processor": {
+        "cn": "处理器",
+        "en": "Processor"
+    },
+    "annihilation_constraint_sphere": {
+        "cn": "湮灭约束球",
+        "en": "Annihilation Constraint Sphere"
+    },
+    "titanium_glass": {
+        "cn": "钛化玻璃",
+        "en": "Titanium Glass"
+    },
+    "particle_broadband": {
+        "cn": "粒子宽带",
+        "en": "Particle Broadband"
+    },
+    "logistics_drone": {
+        "cn": "物流运输机",
+        "en": "Logistics Drone"
+    },
+    "unipolar_magnet": {
+        "cn": "单极磁石",
+        "en": "Unipolar Magnet"
+    },
+    "foundation": {
+        "cn": "地基",
+        "en": "Foundation"
+    },
+    "critical_photon": {
+        "cn": "临界光子",
+        "en": "Critical Photon"
+    },
+    "particle_container": {
+        "cn": "粒子容器",
+        "en": "Particle Container"
+    },
+    "super_magnetic_ring": {
+        "cn": "超级磁场环",
+        "en": "Super Magnetic Ring"
+    },
+    "graviton_lens": {
+        "cn": "引力透镜",
+        "en": "Graviton Lens"
+    },
+    "space_warper": {
+        "cn": "空间翘曲器",
+        "en": "Space Warper"
+    },
+    "plane_filter": {
+        "cn": "位面过滤器",
+        "en": "Plane Filter"
+    },
+    "quantum_chip": {
+        "cn": "量子芯片",
+        "en": "Quantum Chip"
+    },
+    "logistics_vessel": {
+        "cn": "星际物流运输船",
+        "en": "Logistics Vessel"
+    },
+    "blue_matrix": {
+        "cn": "蓝矩阵",
+        "en": "Blue Matrix"
+    },
+    "red_matrix": {
+        "cn": "红矩阵",
+        "en": "Red Matrix"
+    },
+    "yellow_matrix": {
+        "cn": "黄矩阵",
+        "en": "Yellow Matrix"
+    },
+    "purple_matrix": {
+        "cn": "紫矩阵",
+        "en": "Purple Matrix"
+    },
+    "green_matrix": {
+        "cn": "绿矩阵",
+        "en": "Green Matrix"
+    },
+    "white_matrix": {
+        "cn": "白矩阵",
+        "en": "White Matrix"
+    },
+    "solar_sail": {
+        "cn": "太阳帆",
+        "en": "Solar Sail"
+    },
+    "frame_material": {
+        "cn": "框架材料",
+        "en": "Frame Material"
+    },
+    "dyson_sphere_component": {
+        "cn": "戴森球组件",
+        "en": "Dyson Sphere Component"
+    },
+    "small_carrier_rocket": {
+        "cn": "小型运载火箭",
+        "en": "Small Carrier Rocket"
+    },
+    "iron_vein": {
+        "cn": "铁矿脉",
+        "en": "Iron Vein"
+    },
+    "copper_vein": {
+        "cn": "铜矿脉",
+        "en": "Copper Vein"
+    },
+    "stone_vein": {
+        "cn": "石矿脉",
+        "en": "Stone Vein"
+    },
+    "coal_vein": {
+        "cn": "煤矿脉",
+        "en": "Coal Vein"
+    },
+    "silicon_vein": {
+        "cn": "硅矿",
+        "en": "Silicon Vein"
+    },
+    "titanium_vein": {
+        "cn": "钛矿",
+        "en": "Titanium Vein"
+    },
+    "ocean": {
+        "cn": "海洋",
+        "en": "Ocean"
+    },
+    "crude_oil_seep": {
+        "cn": "原油涌泉",
+        "en": "Crude Oil Seep"
+    },
+    "gas_giant_orbit": {
+        "cn": "气态行星",
+        "en": "Gas Giant Orbit"
+    },
+    "kimberlite_vein": {
+        "cn": "金伯利矿脉",
+        "en": "Kimberlite Vein"
+    },
+    "sulfuric_acid_ocean": {
+        "cn": "硫酸海洋",
+        "en": "Sulfuric Acid Ocean"
+    },
+    "fractal_silicon_vein": {
+        "cn": "分形硅矿",
+        "en": "Fractal Silicon Vein"
+    },
+    "fire_ice_vein": {
+        "cn": "可燃冰矿",
+        "en": "Fire Ice Vein"
+    },
+    "organic_crystal_vein": {
+        "cn": "有机晶体矿",
+        "en": "Organic Crystal Vein"
+    },
+    "optical_grating_crystal_vein": {
+        "cn": "光栅石矿",
+        "en": "Optical Grating Crystal Vein"
+    },
+    "spiniform_stalagmite_crystal_vein": {
+        "cn": "刺笋矿脉",
+        "en": "Spiniform Stalagmite Crystal Vein"
+    },
+    "unipolar_magnet_vein": {
+        "cn": "单极磁矿",
+        "en": "Unipolar Magnet Vein"
+    },
+    "ray_receiver": {
+        "cn": "射线接收站",
+        "en": "Ray Receiver"
+    },
+
+
+
+    "title": {
+        "cn": "DSP计算器",
+        "en": "DSP Calculator"
+    },
+    "subtitle": {
+        "cn": "合理规划布局，防变太空垃圾 - By Marcus, Ricky",
+        "en": "Plan your bases better to help reduce space junk - By Marcus, Ricky"
+    },
+    "quantity_input": {
+        "cn": "数量",
+        "en": "Quantity"
+    },
+    "rate_option": {
+        "cn": "每分钟",
+        "en": "Per minute"
+    },
+    "calculate_button": {
+        "cn": "计算",
+        "en": "Calculate"
+    },
+    "settings_button": {
+        "cn": "设置",
+        "en": "Settings"
+    },
+    "placeholder_cell": {
+        "cn": "正在加班做",
+        "en": "We are working hard on this!"
+    },
+    "icon_cell1": {
+        "cn": "图标",
+        "en": "Icon"
+    },
+    "icon_cell2": {
+        "cn": "图标",
+        "en": "Icon"
+    },
+    "items_required_cell": {
+        "cn": "需要物品",
+        "en": "Items Needed"
+    },
+    "quantities_required_cell": {
+        "cn": "需要产量",
+        "en": "# of Needed"
+    },
+    "buildings_required_cell": {
+        "cn": "需要生产建筑",
+        "en": "Building Needed"
+    },
+    "buildings_quantity_required_cell": {
+        "cn": "需要生产建筑数量",
+        "en": "# of Needed"
+    },
+    "raw_required_cell": {
+        "cn": "需要原始资源",
+        "en": "Raw Resources Needed"
+    },
+    "raw_sites_required_cell": {
+        "cn": "需要开采数量",
+        "en": "# of Sites Needed"
+    },
+    "choose_target_item": {
+        "cn": "选择一件物品",
+        "en": "Choose a target item"
+    }
 }

@@ -19,91 +19,99 @@
     </script>
 </head>
 
-<body style="background: #1f2439; max-width:1280px; margin-top:32px; margin-bottom:36px; margin-left:auto; margin-right:auto; padding:32px; padding-bottom:120px;border-radius:12px;box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;">
-    <div class="container" style="text-align: center;">
-        <div style="padding: 0;"></div>
-    </div>
-    <div class="highlight-clean">
-        <div class="container">
-            <div class="intro">
-                <h2 class="text-center" style="color: #cbfaff;text-shadow: 0px 0px 6px #90fbfe;font-weight: 600;font-family: Inter, sans-serif;">DSP计算器</h2>
-                <p class="text-center" style="color: rgb(208,250,254);">
-                    合理规划布局，防变太空垃圾   -   By Marcus, Ricky  -  
-                    <a class="text-center" href="https://github.com/ShanglinMo/dysonSphereProgramCalculator" style="color: rgb(208,250,254);">GitHub</a>
-                </p>
-                
-            </div>
-            <div class="buttons"></div>
+<body style="background-color: transparent">
+    <div style="background: #1f2439; max-width:1280px; margin-top:32px; margin-bottom:36px; margin-left:auto; margin-right:auto; padding:32px; padding-bottom:120px;border-radius:12px;box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;">
+        <div class="container" style="text-align: center;">
+            <div style="padding: 0;"></div>
         </div>
-    </div>
-    <div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4" style="margin-bottom: 8px;"><select id="targetItems" style="width: 100%;color: #A9F7FD;font-family: Inter, sans-serif;font-weight: normal;border-color: #A9F7FD;border-radius: 4px;background: rgba(169,247,253,0.18);height: 36px;font-size: 14px;min-width: 100%;max-width: 100%;" autofocus="">
-                        <option value="undefined">选择一件物品</option>
-                    </select>
+        <div class="highlight-clean">
+            <div class="container">
+                <div class="intro">
+                    <h2 id="title" class="text-center" style="color: #cbfaff;text-shadow: 0px 0px 6px #90fbfe;font-weight: 600;font-family: Inter, sans-serif;">DSP计算器</h2>
+                    <p id="subtitle" class="text-center" style="color: rgb(208,250,254);">
+                        合理规划布局，防变太空垃圾   -   By Marcus, Ricky
+                    </p>
+                    
                 </div>
-                <div class="col-md-4" style="margin-bottom: 8px;">
-                    <input type="number" id="targetQuantity" style="width: 100%;background: rgba(169,247,253,0.18);border: 1px solid #A9F7FD;border-radius: 4px;height: 36px;color: #A9F7FD;font-size: 14px;font-weight: normal;font-family: Inter, sans-serif;" placeholder="数量">
-                </div>
-                <div class="col-md-4"><select id="productRate" style="width: 100%;color: #A9F7FD;font-family: Inter, sans-serif;font-weight: normal;border-color: #A9F7FD;border-radius: 4px;background: rgba(169,247,253,0.18);height: 36px;font-size: 14px;min-width: 100%;max-width: 100%;">
-                        <option value="/m" selected="">每分钟</option>
-                    </select>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12" style="text-align: center;margin: 0px;margin-right: 0px;margin-left: 0px;margin-top: 24px;margin-bottom: 0px;">
-                    <button onClick=calculate() class="btn btn-primary" type="button" style="margin-right: 2px; margin-left: 2px; margin-bottom: 8px; color: #1C2031;font-size: 14px;border-radius: 4px;border-style: solid;border-color: #A9F7FD;background: #A9F7FD;height: 42px;text-align: center;width: 100px;">计算</button>
-                    <button data-toggle="collapse" data-target="#recipe-settings" class="btn btn-primary" type="button" style="margin-left: 2px; margin-bottom: 8px; color: #A9F7FD;font-size: 14px;border-radius: 4px;border-style: solid;border-color: #A9F7FD;background: rgba(169,247,253,0.18);height: 42px;text-align: center;width: 100px;">设置</button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="table-responsive collapse" id="recipe-settings" style="margin-top: 8px;color: #90F5FB;border-radius: 4px;">
-                        <table id="" class="table" style="margin-bottom: 0px">
-                            <tbody>
-                                <tr>
-                                    <td> 正在加班做 </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="table-responsive" style="margin-top: 48px;color: #90F5FB;border-radius: 4px;">
-                        <table id="resultTable1" class="table" style="margin-bottom: 0px">
-                            <tbody>
-                                <tr>
-                                    <td>图标</td>
-                                    <td>需要物品</td>
-                                    <td>需要产量</td>
-                                    <td>需要生产建筑</td>
-                                    <td>需要生产建筑数量</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="table-responsive" style="margin-top: 12px;color: #90F5FB;border-radius: 4px;">
-                        <table id="resultTable2" class="table" style="margin-bottom: 0px">
-                            <tbody>
-                                <tr>
-                                    <td>图标</td>
-                                    <td>需要原始资源</td>
-                                    <td>需要开采数量</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
+                <div class="buttons"></div>
             </div>
         </div>
+        <div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4" style="margin-bottom: 8px;"><select id="targetItems" style="width: 100%;color: #A9F7FD;font-family: Inter, sans-serif;font-weight: normal;border-color: #A9F7FD;border-radius: 4px;background: rgba(169,247,253,0.18);height: 36px;font-size: 14px;min-width: 100%;max-width: 100%;" autofocus="">
+                            <option value="undefined">选择一件物品</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4" style="margin-bottom: 8px;">
+                        <input id="quantity_input" type="number" style="width: 100%;background: rgba(169,247,253,0.18);border: 1px solid #A9F7FD;border-radius: 4px;height: 36px;color: #A9F7FD;font-size: 14px;font-weight: normal;font-family: Inter, sans-serif;" placeholder="数量">
+                    </div>
+                    <div class="col-md-4"><select id="productRate" style="width: 100%;color: #A9F7FD;font-family: Inter, sans-serif;font-weight: normal;border-color: #A9F7FD;border-radius: 4px;background: rgba(169,247,253,0.18);height: 36px;font-size: 14px;min-width: 100%;max-width: 100%;">
+                            <option id="rate_option" value="/m" selected="">每分钟</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12" style="text-align: center;margin: 0px;margin-right: 0px;margin-left: 0px;margin-top: 24px;margin-bottom: 0px;">
+                        <button id="calculate_button" onClick=calculate() class="btn btn-primary" type="button" style="margin-right: 2px; margin-left: 2px; margin-bottom: 8px; color: #1C2031;font-size: 14px;border-radius: 4px;border-style: solid;border-color: #A9F7FD;background: #A9F7FD;height: 42px;text-align: center;width: 100px;">计算</button>
+                        <button id="settings_button" data-toggle="collapse" data-target="#recipe-settings" class="btn btn-primary" type="button" style="margin-left: 2px; margin-bottom: 8px; color: #A9F7FD;font-size: 14px;border-radius: 4px;border-style: solid;border-color: #A9F7FD;background: rgba(169,247,253,0.18);height: 42px;text-align: center;width: 100px;">设置</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="table-responsive collapse" id="recipe-settings" style="margin-top: 8px;color: #90F5FB;border-radius: 4px;">
+                            <table id="" class="table" style="margin-bottom: 0px">
+                                <tbody>
+                                    <tr>
+                                        <td id="placeholder_cell"> 正在加班做 </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="table-responsive" style="margin-top: 48px;color: #90F5FB;border-radius: 4px;">
+                            <table id="resultTable1" class="table" style="margin-bottom: 0px">
+                                <tbody>
+                                    <tr>
+                                        <td id="icon_cell1">图标</td>
+                                        <td id="items_required_cell">需要物品</td>
+                                        <td id="quantities_required_cell">需要产量</td>
+                                        <td id="buildings_required_cell">需要生产建筑</td>
+                                        <td id="buildings_quantity_required_cell">需要生产建筑数量</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="table-responsive" style="margin-top: 12px;color: #90F5FB;border-radius: 4px;">
+                            <table id="resultTable2" class="table" style="margin-bottom: 0px">
+                                <tbody>
+                                    <tr>
+                                        <td id="icon_cell2">图标</td>
+                                        <td id="raw_required_cell">需要原始资源</td>
+                                        <td id="raw_sites_required_cell">需要开采数量</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    
+    <p class="text-center" style="color: rgb(208,250,254);">
+        <a class="text-center" href="javascript:updateLanguage('en');" style="color: rgb(208,250,254);">&nbsp;English&nbsp;</a>
+        <a class="text-center" href="javascript:updateLanguage('cn');" style="color: rgb(208,250,254);">&nbsp;简体中文&nbsp;</a>
+        <a class="text-center" href="https://github.com/ShanglinMo/dysonSphereProgramCalculator" style="color: rgb(208,250,254);">&nbsp;GitHub&nbsp;</a>
+    </p>
+    
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/script.min.js"></script>
@@ -112,8 +120,46 @@
 
 <script>
 
+/* update when user visits */
+var currentLanguage = String(navigator.language || navigator.userLanguage).toLowerCase()
+
+/* recipe -> item -> recipes */
 var recipeList
 var supChain
+recipeList = loadRecipes()
+trans = loadTrans()
+updateLanguage(currentLanguage)
+console.log("Browser language is: " + currentLanguage)
+
+/* language switcher */
+function updateLanguage(targetLanguage) {
+    trans = loadTrans()
+    if (targetLanguage.includes('cn')) {
+        currentLanguage = "cn"
+    }
+    else { // if (targetLanguage.includes('en')) {
+        currentLanguage = "en"
+    }
+    addTargetItems()
+    cleanTable()
+    document.getElementById('title').innerHTML = trans['title'][currentLanguage]
+    document.getElementById('subtitle').innerHTML = trans['subtitle'][currentLanguage]
+    document.getElementById('quantity_input').placeholder = trans['quantity_input'][currentLanguage]
+    document.getElementById('rate_option').innerHTML = trans['rate_option'][currentLanguage]
+    document.getElementById('quantity_input').placeholder = trans['quantity_input'][currentLanguage]
+    document.getElementById('calculate_button').innerHTML = trans['calculate_button'][currentLanguage]
+    document.getElementById('settings_button').innerHTML = trans['settings_button'][currentLanguage]
+    document.getElementById('placeholder_cell').innerHTML = trans['placeholder_cell'][currentLanguage]
+    document.getElementById('icon_cell1').innerHTML = trans['icon_cell1'][currentLanguage]
+    document.getElementById('icon_cell2').innerHTML = trans['icon_cell2'][currentLanguage]
+    document.getElementById('items_required_cell').innerHTML = trans['items_required_cell'][currentLanguage]
+    document.getElementById('quantities_required_cell').innerHTML = trans['quantities_required_cell'][currentLanguage]
+    document.getElementById('buildings_required_cell').innerHTML = trans['buildings_required_cell'][currentLanguage]
+    document.getElementById('buildings_quantity_required_cell').innerHTML = trans['buildings_quantity_required_cell'][currentLanguage]
+    document.getElementById('raw_required_cell').innerHTML = trans['raw_required_cell'][currentLanguage]
+    document.getElementById('raw_sites_required_cell').innerHTML = trans['raw_sites_required_cell'][currentLanguage]
+}
+console.log("Current language is: " + currentLanguage)
 
 function loadRecipes(){
     var json = (function () {
@@ -170,27 +216,25 @@ function makeChain(item, amount){
     return parent 
 }
 
-/* recipe -> item -> recipes */
-recipeList = loadRecipes()
-trans = loadTrans()
-addTargetItems()
-
 /* add items to <select> */
 function addTargetItems() {
     var select = document.getElementById("targetItems")
+    $("#targetItems").empty();
+    var option = document.createElement("option")
+    option.text = trans['choose_target_item'][currentLanguage]
+    select.add(option)
     var names = Object.keys(recipeList)
     var i
     for (i = 0; i < names.length; i++) {
         var option = document.createElement("option")
-        option.text = trans[names[i]]
+        option.text = trans[names[i]][currentLanguage]
         option.value = names[i]
         select.add(option)
     }
 }
 
-/* calculate */ 
-function calculate() {
-    /* clean table */
+/* clean table */
+function cleanTable() {
     var theTable = document.getElementById("resultTable1");
     var rowsToDelete = theTable.rows.length
     var x
@@ -203,11 +247,17 @@ function calculate() {
     for(x = 1; x < rowsToDelete; x++) {
         theTable.deleteRow(1)
     }
+}
+
+/* calculate */ 
+function calculate() {
+    /* clean table */
+    cleanTable()
     /* get target item */ 
     var select = document.getElementById("targetItems")
     var targetItem = select.options[select.selectedIndex].value
     /* get target quantity */ 
-    var targetQuantity = document.getElementById("targetQuantity").value;
+    var targetQuantity = document.getElementById("quantity_input").value;
     /* make chain */ 
     supplyChain = makeChain(targetItem, targetQuantity)
     console.log(supplyChain)
@@ -215,7 +265,7 @@ function calculate() {
 
     /* insert row */
     function insertRow(node) {
-        cell1 = trans[node.item]
+        cell1 = trans[node.item][currentLanguage]
         if (!node.item.includes("vein")) { node.amount = Math.round(node.amount); }
         var table1 = document.getElementById("resultTable1").tBodies[0]
         var table2 = document.getElementById("resultTable2").tBodies[0]

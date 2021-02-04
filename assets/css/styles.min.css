@@ -6,14 +6,14 @@
 }
   
 .table-responsive {
-    -webkit-box-shadow:inset 0px 0px 0px 1px #90F5FB;
-    -moz-box-shadow:inset 0px 0px 0px 1px #90F5FB;
-    box-shadow:inset 0px 0px 0px 1px #90F5FB;
+    -webkit-box-shadow:inset 0px 0px 0px 1px #90f6fbcb;
+    -moz-box-shadow:inset 0px 0px 0px 1px #90f6fbcb;
+    box-shadow:inset 0px 0px 0px 1px #90f6fbcb;
 }
 
 td {
-    color: #90F5FB !important;
-    border-color: #90F5FB !important;
+    color: #90f6fbcb !important;
+    border-color: #90f6fbcb !important;
 }
 .table>tbody>tr>td, 
 .table>tbody>tr>th, 

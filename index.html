@@ -17,8 +17,12 @@
     <div class="highlight-clean">
         <div class="container">
             <div class="intro">
-                <h2 class="text-center" style="color: #cbfaff;text-shadow: 0px 0px 6px #90fbfe;font-weight: 600;font-family: Inter, sans-serif;">戴森球计划计算器</h2>
-                <p class="text-center" style="color: rgb(208,250,254);">算点东西吧老板</p>
+                <h2 class="text-center" style="color: #cbfaff;text-shadow: 0px 0px 6px #90fbfe;font-weight: 600;font-family: Inter, sans-serif;">DSP计算器</h2>
+                <p class="text-center" style="color: rgb(208,250,254);">
+                    算点东西吧老板   -   By Marcus, Ricky  -  
+                    <a class="text-center" href="https://github.com/ShanglinMo/dysonSphereProgramCalculator" style="color: rgb(208,250,254);">GitHub</a>
+                </p>
+                
             </div>
             <div class="buttons"></div>
         </div>
@@ -60,7 +64,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="table-responsive" style="margin-top: 48px;color: #90F5FB;border-radius: 4px;">
-                        <table id="resultTable" class="table" style="margin-bottom: 0px">
+                        <table id="resultTable1" class="table" style="margin-bottom: 0px">
                             <tbody>
                                 <tr>
                                     <td>图标</td>
@@ -68,6 +72,21 @@
                                     <td>需要产量</td>
                                     <td>需要生产建筑</td>
                                     <td>需要生产建筑数量</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="table-responsive" style="margin-top: 12px;color: #90F5FB;border-radius: 4px;">
+                        <table id="resultTable2" class="table" style="margin-bottom: 0px">
+                            <tbody>
+                                <tr>
+                                    <td>图标</td>
+                                    <td>需要原始资源</td>
+                                    <td>需要开采数量</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -163,7 +182,13 @@ function addTargetItems() {
 /* calculate */ 
 function calculate() {
     /* clean table */
-    var theTable = document.getElementById("resultTable");
+    var theTable = document.getElementById("resultTable1");
+    var rowsToDelete = theTable.rows.length
+    var x
+    for(x = 1; x < rowsToDelete; x++) {
+        theTable.deleteRow(1)
+    }
+    var theTable = document.getElementById("resultTable2");
     var rowsToDelete = theTable.rows.length
     var x
     for(x = 1; x < rowsToDelete; x++) {
@@ -183,14 +208,26 @@ function calculate() {
     function insertRow(node) {
         cell1 = trans[node.item]
         if (!node.item.includes("vein")) { node.amount = Math.round(node.amount); }
-        var table = document.getElementById("resultTable").tBodies[0]
-        var row = table.rows[0].cloneNode(true)
-        row.cells[0].innerHTML = "<img style='max-width:3rem;max-height:3rem;' src='icon/" + node.item + ".png'/>"
-        row.cells[1].innerHTML = cell1
-        row.cells[2].innerHTML = node.amount // + " " + document.getElementById("productRate").value
-        row.cells[3].innerHTML = "<img style='max-width:3rem;max-height:3rem;' src='icon/" + node.factory[0] + ".png'/>"
-        row.cells[4].innerHTML = node.factory[1]
-        table.appendChild(row);
+        var table1 = document.getElementById("resultTable1").tBodies[0]
+        var table2 = document.getElementById("resultTable2").tBodies[0]
+        if (node.factory == undefined) {
+            var row = table2.rows[0].cloneNode(true)
+            row.cells[0].innerHTML = "<img style='max-width:3rem;max-height:3rem;' src='icon/" + node.item + ".png'/>"
+            row.cells[1].innerHTML = cell1
+            row.cells[2].innerHTML = node.amount // + " " + document.getElementById("productRate").value
+            // row.cells[3].innerHTML = "正在加班做"
+            // row.cells[4].innerHTML = "正在加班做"
+            table2.appendChild(row);
+        }
+        else { 
+            var row = table1.rows[0].cloneNode(true)
+            row.cells[0].innerHTML = "<img style='max-width:3rem;max-height:3rem;' src='icon/" + node.item + ".png'/>"
+            row.cells[1].innerHTML = cell1
+            row.cells[2].innerHTML = node.amount // + " " + document.getElementById("productRate").value
+            row.cells[3].innerHTML = "<img style='max-width:3rem;max-height:3rem;' src='icon/" + node.factory[0] + ".png'/>"
+            row.cells[4].innerHTML = node.factory[1]
+            table1.appendChild(row);
+        }
     }
 
     /* bfs to add all ingredients */

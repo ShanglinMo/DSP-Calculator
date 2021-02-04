@@ -53,7 +53,7 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12" style="text-align: center;margin: 0px;margin-right: 0px;margin-left: 0px;margin-top: 24px;margin-bottom: 0px;">
-                        <button id="calculate_button" onClick=calculate() class="btn btn-primary" type="button" style="margin-right: 2px; margin-left: 2px; margin-bottom: 8px; color: #1C2031;font-size: 14px;border-radius: 4px;border-style: solid;border-color: #A9F7FD;background: #A9F7FD;height: 42px;text-align: center;width: 100px;">计算</button>
+                        <button id="calculate_button" onClick=calculate() class="btn btn-primary" type="button" style="margin-right: 2px; margin-left: 2px; margin-bottom: 8px; color: #1C2031;font-size: 14px;border-radius: 4px;border-style: solid;border-color: #a9f7fdef;background: #a9f7fdef;height: 42px;text-align: center;width: 100px;">计算</button>
                         <button id="settings_button" data-toggle="collapse" data-target="#recipe-settings" class="btn btn-primary" type="button" style="margin-left: 2px; margin-bottom: 8px; color: #A9F7FD;font-size: 14px;border-radius: 4px;border-style: solid;border-color: #A9F7FD;background: rgba(169,247,253,0.18);height: 42px;text-align: center;width: 100px;">设置</button>
                     </div>
                 </div>
@@ -271,7 +271,7 @@ function calculate() {
         var table2 = document.getElementById("resultTable2").tBodies[0]
         if (node.factory == undefined) {
             var row = table2.rows[0].cloneNode(true)
-            row.cells[0].innerHTML = "<img style='max-width:3rem;max-height:3rem;' src='icon/" + node.item + ".png'/>"
+            row.cells[0].innerHTML = "<img style='max-width:2.5rem;max-height:2.5rem;' src='icon/" + node.item + ".png'/>"
             row.cells[1].innerHTML = cell1
             row.cells[2].innerHTML = node.amount // + " " + document.getElementById("productRate").value
             // row.cells[3].innerHTML = "正在加班做"
@@ -280,10 +280,10 @@ function calculate() {
         }
         else { 
             var row = table1.rows[0].cloneNode(true)
-            row.cells[0].innerHTML = "<img style='max-width:3rem;max-height:3rem;' src='icon/" + node.item + ".png'/>"
+            row.cells[0].innerHTML = "<img style='max-width:2.5rem;max-height:2.5rem;' src='icon/" + node.item + ".png'/>"
             row.cells[1].innerHTML = cell1
             row.cells[2].innerHTML = node.amount // + " " + document.getElementById("productRate").value
-            row.cells[3].innerHTML = "<img style='max-width:3rem;max-height:3rem;' src='icon/" + node.factory[0] + ".png'/>"
+            row.cells[3].innerHTML = "<img style='max-width:2.5rem;max-height:2.5rem;' src='icon/" + node.factory[0] + ".png'/>"
             row.cells[4].innerHTML = node.factory[1]
             table1.appendChild(row);
         }
